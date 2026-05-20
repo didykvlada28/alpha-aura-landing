@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alpha Aura — A premium transformational experience of movement, energy, mindset, and connection. Activate your inner power."
+    />
+    <meta name="theme-color" content="#1a1816" />
+    <title>Alpha Aura — Activate Your Inner Power</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Meta Pixel: set metaPixelId in js/config.js -->
+    <noscript id="meta-pixel-noscript"></noscript>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="#hero" class="logo" aria-label="Alpha Aura home">Alpha <span>Aura</span></a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a class="wa-link" href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20the%20Alpha%20Aura%20experience." target="_blank" rel="noopener noreferrer">Experience</a>
+          <a class="wa-link" href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20ask%20about%20Alpha%20Aura%20session%20options." target="_blank" rel="noopener noreferrer">Sessions</a>
+          <a class="wa-link" href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20the%2011%3A11%20Experience." target="_blank" rel="noopener noreferrer">11:11</a>
+          <a class="wa-link" href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session." target="_blank" rel="noopener noreferrer">Atmosphere</a>
+        </nav>
+        <div class="header__actions">
+          <a
+            href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
+            class="btn btn--ghost btn--sm wa-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Message Us</a
+          >
+          <a
+            href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
+            class="btn btn--primary btn--sm wa-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Book Session</a
+          >
+          <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Hero -->
+      <section class="hero" id="hero" aria-label="Hero">
+        <div class="hero__media">
+          <img
+            src="images/hero-group.jpg"
+            alt="Group reaching toward the sky during Alpha Aura on a rooftop"
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+          />
+          <!-- Replace with video when available:
+          <video autoplay muted loop playsinline poster="images/hero-group.jpg">
+            <source src="videos/hero.mp4" type="video/mp4" />
+          </video>
+          -->
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Premium Transformation</p>
+          <h1 class="reveal reveal-delay-1">Activate Your Inner Power</h1>
+          <p class="hero__sub reveal reveal-delay-2">
+            A premium transformational experience of movement, energy, mindset, and connection.
+          </p>
+          <p class="hero__support reveal reveal-delay-2">
+            Join Alpha Aura and reconnect with your confidence, clarity, freedom, and higher energy.
+          </p>
+          <div class="hero__ctas reveal reveal-delay-3">
+            <a
+              href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
+              class="btn btn--primary wa-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book Your Session</a
+            >
+            <a
+              href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
+              class="btn btn--whatsapp wa-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Message Us on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Discover</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- 2. Emotional Problem / Desire -->
+      <section class="section" id="desire">
+        <div class="container desire">
+          <div class="desire__visual reveal">
+            <img
+              src="images/sensory-closeup.jpg"
+              alt="Close-up expressing presence and sensory activation"
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+          </div>
+          <div class="desire__copy reveal reveal-delay-1">
+            <p class="eyebrow">Return to Yourself</p>
+            <h2>Your energy is still there — waiting to be felt again</h2>
+            <div class="gold-line"></div>
+            <p class="lead">
+              In a world full of noise and distraction, it is easy to feel disconnected from your own energy.
+            </p>
+            <p>
+              Alpha Aura helps you return to yourself — through movement, awareness, breath, mindset, and collective energy. Not by pushing harder, but by awakening what is already within you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. What Is Alpha Aura -->
+      <section class="section section--beige" id="about">
+        <div class="container">
+          <div class="pillars-intro reveal">
+            <p class="eyebrow">The Journey</p>
+            <h2>What Is Alpha Aura</h2>
+            <p class="lead">
+              A guided transformational journey — where movement, mindset, and energy meet in one elevated experience.
+            </p>
+          </div>
+          <div class="pillars-grid">
+            <article class="pillar-card reveal">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M12 3v18M8 8l4-5 4 5M8 16l4 5 4-5" />
+              </svg>
+              <h3>Dynamic Movement</h3>
+              <p>Expressive, embodied motion that unlocks vitality and presence in the body.</p>
+            </article>
+            <article class="pillar-card reveal reveal-delay-1">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="12" cy="12" r="9" /><path d="M12 8v4l3 2" />
+              </svg>
+              <h3>Mindset Shifts</h3>
+              <p>Conscious reframing that opens clarity, confidence, and self-belief.</p>
+            </article>
+            <article class="pillar-card reveal reveal-delay-1">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M4 12h16M12 4c4 4 4 12 0 16M12 4c-4 4-4 12 0 16" />
+              </svg>
+              <h3>Sensory Activation</h3>
+              <p>Heightened awareness through breath, touch, sound, and intentional presence.</p>
+            </article>
+            <article class="pillar-card reveal reveal-delay-2">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z" />
+              </svg>
+              <h3>Energy Expansion</h3>
+              <p>A felt sense of rising frequency — more alive, open, and aligned.</p>
+            </article>
+            <article class="pillar-card reveal reveal-delay-2">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M8 12a4 4 0 108 0M12 16v5M9 21h6" />
+              </svg>
+              <h3>Deep Connection</h3>
+              <p>With yourself, with others, and with the collective field of the experience.</p>
+            </article>
+            <article class="pillar-card reveal reveal-delay-3">
+              <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M12 3c-4 6-8 6-8 12a8 8 0 1016 0c0-6-4-6-8-12z" />
+              </svg>
+              <h3>Confidence &amp; Peace</h3>
+              <p>Embodied self-belief, inner calm, freedom, and authentic self-expression.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. The Alpha Aura Experience -->
+      <section class="experience" id="experience">
+        <div class="experience__image reveal">
+          <img
+            src="images/movement.jpg"
+            alt="Woman in dynamic movement during Alpha Aura at golden hour"
+            width="1200"
+            height="1400"
+            loading="lazy"
+          />
+        </div>
+        <div class="experience__copy reveal reveal-delay-1">
+          <p class="eyebrow">Feel It In Your Body</p>
+          <h2>The Alpha Aura Experience</h2>
+          <p>
+            Through Alpha Aura, abstract ideas like alignment, expansion, and inner power become something you can actually feel in your body.
+          </p>
+          <p>
+            The method activates core energy, sharpens the senses, and helps you embody confidence, clarity, and freedom — not as concepts, but as lived experience.
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
+            class="btn btn--primary wa-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Book Your Session</a
+          >
+        </div>
+      </section>
+
+      <!-- 5. Session Options -->
+      <section class="section" id="sessions">
+        <div class="container">
+          <div class="pillars-intro reveal">
+            <p class="eyebrow">Choose Your Path</p>
+            <h2>Session Options</h2>
+            <p class="lead">Join in the way that resonates with you — open class, private journey, or shared with your circle.</p>
+          </div>
+          <div class="sessions-grid">
+            <article class="session-card reveal">
+              <div class="session-card__img">
+                <img src="images/collective-rooftop.jpg" alt="Group session on a luxury rooftop" loading="lazy" />
+              </div>
+              <div class="session-card__body">
+                <p class="session-card__label">Option 01</p>
+                <h3>Regular Class</h3>
+                <p>
+                  For individuals who want to join an open Alpha Aura session and experience the energy of the group.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20register%20for%20a%20Regular%20Alpha%20Aura%20class."
+                  class="btn btn--dark wa-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Register Now</a
+                >
+              </div>
+            </article>
+            <article class="session-card reveal reveal-delay-1">
+              <div class="session-card__img">
+                <img src="images/sensory-closeup.jpg" alt="Intimate private session moment" loading="lazy" />
+              </div>
+              <div class="session-card__body">
+                <p class="session-card__label">Option 02</p>
+                <h3>Private Session</h3>
+                <p>
+                  A personalized Alpha Aura experience for those who want a deeper, more intimate transformational journey.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Private%20Alpha%20Aura%20session."
+                  class="btn btn--outline wa-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ask About Private Session</a
+                >
+              </div>
+            </article>
+            <article class="session-card reveal reveal-delay-2">
+              <div class="session-card__img">
+                <img src="images/hero-group.jpg" alt="Private group experience together" loading="lazy" />
+              </div>
+              <div class="session-card__body">
+                <p class="session-card__label">Option 03</p>
+                <h3>Private Group Experience</h3>
+                <p>
+                  For friends, families, private celebrations, or small groups who want to share a powerful transformational experience together.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20a%20Private%20Group%20Alpha%20Aura%20experience."
+                  class="btn btn--outline wa-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Book for Your Group</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. 11:11 Experience -->
+      <section class="experience-1111 section--dark" id="eleven-eleven">
+        <div class="experience-1111__bg" aria-hidden="true">
+          <img src="images/moodboard.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="experience-1111__overlay" aria-hidden="true"></div>
+        <div class="container experience-1111__inner">
+          <div class="reveal">
+            <p class="experience-1111__time">11:11<span>Signature Experience</span></p>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="eyebrow">60-Minute Journey</p>
+            <h2>The 11:11 Experience</h2>
+            <p class="text-light" style="max-width: 36rem; margin-bottom: 0">
+              A 60-minute transformational journey designed to activate your inner Alpha and expand your Aura through dynamic movement, sensory activation, and mindset shifts.
+            </p>
+            <ul class="experience-1111__list">
+              <li>Physical, mental &amp; emotional activation</li>
+              <li>Energetic expansion &amp; higher frequency</li>
+              <li>Collective momentum</li>
+              <li>Confidence &amp; clarity</li>
+              <li>Deep connection</li>
+              <li>Embodied freedom</li>
+            </ul>
+            <a
+              href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20the%2011%3A11%20Experience."
+              class="btn btn--primary wa-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book 11:11 Experience</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Why Join -->
+      <section class="section section--beige benefits" id="benefits">
+        <div class="container">
+          <div class="reveal">
+            <p class="eyebrow">After Your Session</p>
+            <h2>Why Join Alpha Aura</h2>
+            <p class="lead">
+              Many guests describe feeling more alive, grounded, and connected — in ways words alone cannot capture.
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-item reveal"><strong>Connected</strong> More in tune with yourself</div>
+            <div class="benefit-item reveal reveal-delay-1"><strong>Confident</strong> Clearer in your presence</div>
+            <div class="benefit-item reveal reveal-delay-1"><strong>Alive</strong> More open and energized</div>
+            <div class="benefit-item reveal reveal-delay-2"><strong>Grounded</strong> Steady in body and mind</div>
+            <div class="benefit-item reveal reveal-delay-2"><strong>Free</strong> Emotionally lighter and expansive</div>
+            <div class="benefit-item reveal reveal-delay-3"><strong>Aligned</strong> Closer to your inner power</div>
+            <div class="benefit-item reveal reveal-delay-3"><strong>Energized</strong> Renewed vitality and clarity</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Social / Atmosphere -->
+      <section class="section" id="atmosphere">
+        <div class="container">
+          <div class="gallery-header reveal">
+            <p class="eyebrow">The Atmosphere</p>
+            <h2>Feel the Energy Before You Arrive</h2>
+            <p class="lead">Movement. Connection. Rooftop light. Human moments that stay with you.</p>
+          </div>
+          <div class="gallery-mosaic">
+            <figure class="gallery-item gallery-item--1 reveal">
+              <img src="images/hero-group.jpg" alt="Group reaching upward in collective movement" loading="lazy" />
+              <figcaption class="gallery-item__caption">Collective momentum</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-item--2 reveal reveal-delay-1">
+              <img src="images/movement.jpg" alt="Dynamic expressive movement" loading="lazy" />
+              <figcaption class="gallery-item__caption">Dynamic movement</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-item--3 reveal reveal-delay-1">
+              <img src="images/collective-rooftop.jpg" alt="Rooftop group experience with ocean view" loading="lazy" />
+              <figcaption class="gallery-item__caption">Luxury atmosphere</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-item--4 reveal reveal-delay-2">
+              <img src="images/sensory-closeup.jpg" alt="Emotional close-up" loading="lazy" />
+              <figcaption class="gallery-item__caption">Sensory presence</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-item--5 reveal reveal-delay-2">
+              <img src="images/energy-fabric.jpg" alt="Hands holding flowing orange fabric" loading="lazy" />
+              <figcaption class="gallery-item__caption">Energy expansion</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-item--6 reveal reveal-delay-3">
+              <img src="images/moodboard.jpg" alt="Cinematic brand moments collage" loading="lazy" />
+              <figcaption class="gallery-item__caption">The Alpha Aura world</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Final CTA -->
+      <section class="final-cta" id="final-cta">
+        <div class="container reveal">
+          <p class="eyebrow">Begin Your Journey</p>
+          <h2>Your energy is already within you. Let's activate it.</h2>
+          <p>Take the first step toward confidence, clarity, and higher frequency.</p>
+          <div class="final-cta__buttons">
+            <a
+              href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
+              class="btn btn--primary wa-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Book Your Session</a
+            >
+            <a
+              href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
+              class="btn btn--outline wa-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              Message Us on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">Alpha <span>Aura</span></div>
+        <p>&copy; <span id="year"></span> Alpha Aura. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
+      class="whatsapp-float wa-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Message us on WhatsApp"
+      title="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

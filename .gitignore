@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+.vercel/
+
+# Cursor / local dev only
+assets/
+mcps/
+terminals/
+agent-transcripts/
