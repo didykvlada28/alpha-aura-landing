@@ -26,14 +26,14 @@ Edit `public/js/config.js` if the number changes.
 
 Pixel ID: `731067880081984`
 
-| Event | When it fires |
-|-------|----------------|
-| `PageView` | Every page load |
-| `Lead` | Book / Register / 11:11 / session buttons |
-| `Contact` | WhatsApp / Message Us clicks |
-| `ViewContent` | User scrolls to key sections |
-| `ScrollDepth` (custom) | 25%, 50%, 75%, 90% scroll |
-| `BookSessionClick` (custom) | Book CTA with section name |
-| `WhatsAppClick` (custom) | Any WhatsApp CTA |
+**One conversion event for all buttons:** `Lead`  
+(Book, Register, Message, WhatsApp — всё одинаково)
 
-Verify in [Meta Events Manager](https://business.facebook.com/events_manager) → Test Events.
+| Event | When |
+|-------|------|
+| `PageView` | Page load |
+| `Lead` | Any CTA / WhatsApp click |
+
+In Ads Manager choose **Leads** → optimize for event **Lead**.
+
+Verify: [Meta Events Manager](https://business.facebook.com/events_manager) → Test Events.
