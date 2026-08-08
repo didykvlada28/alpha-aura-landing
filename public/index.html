@@ -54,16 +54,23 @@
       <div class="header__inner">
         <a href="#hero" class="logo" aria-label="Alpha Aura home">Alpha <span>Aura</span></a>
         <nav class="nav" id="nav" aria-label="Main">
-          <a href="#experience">Experience</a>
-          <a href="#sessions">Sessions</a>
-          <a href="#eleven-eleven">11:11</a>
-          <a href="#ranch">Horse Ranch</a>
-          <a href="#atmosphere">Atmosphere</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#sessions" data-i18n="nav.sessions">Sessions</a>
+          <a href="#eleven-eleven" data-i18n="nav.1111">11:11</a>
+          <a href="#ranch" data-i18n="nav.ranch">Horse Ranch</a>
+          <a href="#atmosphere" data-i18n="nav.atmosphere">Atmosphere</a>
         </nav>
         <div class="header__actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-switch__sep" aria-hidden="true">/</span>
+            <button type="button" class="lang-switch__btn" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
           <a
             href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
             class="btn btn--ghost btn--sm wa-link"
+            data-i18n="cta.message"
+            data-i18n-wa="wa.default"
             target="_blank"
             rel="noopener noreferrer"
             >Message Us</a
@@ -71,6 +78,8 @@
           <a
             href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
             class="btn btn--primary btn--sm wa-link"
+            data-i18n="cta.book"
+            data-i18n-wa="wa.book"
             target="_blank"
             rel="noopener noreferrer"
             >Book Session</a
@@ -102,18 +111,20 @@
         <div class="hero__overlay" aria-hidden="true"></div>
         <div class="hero__grain" aria-hidden="true"></div>
         <div class="hero__content">
-          <p class="eyebrow reveal">Premium Transformation</p>
-          <h1 class="reveal reveal-delay-1">Activate Your Inner Power</h1>
-          <p class="hero__sub reveal reveal-delay-2">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Premium Transformation</p>
+          <h1 class="reveal reveal-delay-1" data-i18n="hero.title">Activate Your Inner Power</h1>
+          <p class="hero__sub reveal reveal-delay-2" data-i18n="hero.sub">
             A premium transformational experience of movement, energy, mindset, and connection.
           </p>
-          <p class="hero__support reveal reveal-delay-2">
+          <p class="hero__support reveal reveal-delay-2" data-i18n="hero.support">
             Join Alpha Aura and reconnect with your confidence, clarity, freedom, and higher energy.
           </p>
           <div class="hero__ctas reveal reveal-delay-3">
             <a
               href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
               class="btn btn--primary wa-link"
+              data-i18n="cta.bookSession"
+              data-i18n-wa="wa.book"
               target="_blank"
               rel="noopener noreferrer"
               >Book Your Session</a
@@ -121,6 +132,9 @@
             <a
               href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
               class="btn btn--whatsapp wa-link"
+              data-i18n="cta.whatsapp"
+              data-i18n-wa="wa.default"
+              data-i18n-keep-html
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -134,7 +148,7 @@
           </div>
         </div>
         <div class="hero__scroll" aria-hidden="true">
-          <span>Discover</span>
+          <span data-i18n="hero.discover">Discover</span>
           <div class="hero__scroll-line"></div>
         </div>
       </section>
@@ -152,13 +166,13 @@
             />
           </div>
           <div class="desire__copy reveal reveal-delay-1">
-            <p class="eyebrow">Return to Yourself</p>
-            <h2>Your energy is still there — waiting to be felt again</h2>
+            <p class="eyebrow" data-i18n="desire.eyebrow">Return to Yourself</p>
+            <h2 data-i18n="desire.title">Your energy is still there — waiting to be felt again</h2>
             <div class="gold-line"></div>
-            <p class="lead">
+            <p class="lead" data-i18n="desire.lead">
               In a world full of noise and distraction, it is easy to feel disconnected from your own energy.
             </p>
-            <p>
+            <p data-i18n="desire.body">
               Alpha Aura helps you return to yourself — through movement, awareness, breath, mindset, and collective energy. Not by pushing harder, but by awakening what is already within you.
             </p>
           </div>
@@ -169,9 +183,9 @@
       <section class="section section--beige" id="about">
         <div class="container">
           <div class="pillars-intro reveal">
-            <p class="eyebrow">The Journey</p>
-            <h2>What Is Alpha Aura</h2>
-            <p class="lead">
+            <p class="eyebrow" data-i18n="about.eyebrow">The Journey</p>
+            <h2 data-i18n="about.title">What Is Alpha Aura</h2>
+            <p class="lead" data-i18n="about.lead">
               A guided transformational journey — where movement, mindset, and energy meet in one elevated experience.
             </p>
           </div>
@@ -180,43 +194,43 @@
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M12 3v18M8 8l4-5 4 5M8 16l4 5 4-5" />
               </svg>
-              <h3>Dynamic Movement</h3>
-              <p>Expressive, embodied motion that unlocks vitality and presence in the body.</p>
+              <h3 data-i18n="pillar.movement.title">Dynamic Movement</h3>
+              <p data-i18n="pillar.movement.body">Expressive, embodied motion that unlocks vitality and presence in the body.</p>
             </article>
             <article class="pillar-card reveal reveal-delay-1">
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <circle cx="12" cy="12" r="9" /><path d="M12 8v4l3 2" />
               </svg>
-              <h3>Mindset Shifts</h3>
-              <p>Conscious reframing that opens clarity, confidence, and self-belief.</p>
+              <h3 data-i18n="pillar.mindset.title">Mindset Shifts</h3>
+              <p data-i18n="pillar.mindset.body">Conscious reframing that opens clarity, confidence, and self-belief.</p>
             </article>
             <article class="pillar-card reveal reveal-delay-1">
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M4 12h16M12 4c4 4 4 12 0 16M12 4c-4 4-4 12 0 16" />
               </svg>
-              <h3>Sensory Activation</h3>
-              <p>Heightened awareness through breath, touch, sound, and intentional presence.</p>
+              <h3 data-i18n="pillar.sensory.title">Sensory Activation</h3>
+              <p data-i18n="pillar.sensory.body">Heightened awareness through breath, touch, sound, and intentional presence.</p>
             </article>
             <article class="pillar-card reveal reveal-delay-2">
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z" />
               </svg>
-              <h3>Energy Expansion</h3>
-              <p>A felt sense of rising frequency — more alive, open, and aligned.</p>
+              <h3 data-i18n="pillar.energy.title">Energy Expansion</h3>
+              <p data-i18n="pillar.energy.body">A felt sense of rising frequency — more alive, open, and aligned.</p>
             </article>
             <article class="pillar-card reveal reveal-delay-2">
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M8 12a4 4 0 108 0M12 16v5M9 21h6" />
               </svg>
-              <h3>Deep Connection</h3>
-              <p>With yourself, with others, and with the collective field of the experience.</p>
+              <h3 data-i18n="pillar.connection.title">Deep Connection</h3>
+              <p data-i18n="pillar.connection.body">With yourself, with others, and with the collective field of the experience.</p>
             </article>
             <article class="pillar-card reveal reveal-delay-3">
               <svg class="pillar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                 <path d="M12 3c-4 6-8 6-8 12a8 8 0 1016 0c0-6-4-6-8-12z" />
               </svg>
-              <h3>Confidence &amp; Peace</h3>
-              <p>Embodied self-belief, inner calm, freedom, and authentic self-expression.</p>
+              <h3 data-i18n="pillar.peace.title">Confidence &amp; Peace</h3>
+              <p data-i18n="pillar.peace.body">Embodied self-belief, inner calm, freedom, and authentic self-expression.</p>
             </article>
           </div>
         </div>
@@ -234,17 +248,19 @@
           />
         </div>
         <div class="experience__copy reveal reveal-delay-1">
-          <p class="eyebrow">Feel It In Your Body</p>
-          <h2>The Alpha Aura Experience</h2>
-          <p>
+          <p class="eyebrow" data-i18n="experience.eyebrow">Feel It In Your Body</p>
+          <h2 data-i18n="experience.title">The Alpha Aura Experience</h2>
+          <p data-i18n="experience.p1">
             Through Alpha Aura, abstract ideas like alignment, expansion, and inner power become something you can actually feel in your body.
           </p>
-          <p>
+          <p data-i18n="experience.p2">
             The method activates core energy, sharpens the senses, and helps you embody confidence, clarity, and freedom — not as concepts, but as lived experience.
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
             class="btn btn--primary wa-link"
+            data-i18n="cta.bookSession"
+            data-i18n-wa="wa.book"
             target="_blank"
             rel="noopener noreferrer"
             >Book Your Session</a
@@ -256,9 +272,9 @@
       <section class="section ranch" id="ranch">
         <div class="container">
           <div class="ranch-intro reveal">
-            <p class="eyebrow">Featured Location</p>
-            <h2>11:11 at the Horse Ranch</h2>
-            <p class="lead">
+            <p class="eyebrow" data-i18n="ranch.eyebrow">Featured Location</p>
+            <h2 data-i18n="ranch.title">11:11 at the Horse Ranch</h2>
+            <p class="lead" data-i18n="ranch.lead">
               A sanctuary where sand, sunset light, free-roaming horses, and Alpha Aura activation become one immersive ritual.
             </p>
           </div>
@@ -270,25 +286,27 @@
               loading="lazy"
             />
             <div class="ranch-hero__caption">
-              <p class="eyebrow">The Atmosphere</p>
-              <p>As the sun sets and moonlight fills the ranch, nature, light, silence, movement, and community become an unforgettable ritual.</p>
+              <p class="eyebrow" data-i18n="ranch.hero.eyebrow">The Atmosphere</p>
+              <p data-i18n="ranch.hero.caption">As the sun sets and moonlight fills the ranch, nature, light, silence, movement, and community become an unforgettable ritual.</p>
             </div>
           </div>
 
           <div class="ranch-story">
             <div class="ranch-story__copy reveal">
-              <p class="eyebrow">A Place of Transformation</p>
-              <h3>Why the Ranch</h3>
+              <p class="eyebrow" data-i18n="ranch.why.eyebrow">A Place of Transformation</p>
+              <h3 data-i18n="ranch.why.title">Why the Ranch</h3>
               <div class="gold-line"></div>
-              <p class="lead">
+              <p class="lead" data-i18n="ranch.why.lead">
                 Discover a unique sanctuary where nature, respect for the horses, and a peaceful environment create the perfect foundation for deep inner work.
               </p>
-              <p>
+              <p data-i18n="ranch.why.body">
                 Here, Alpha Aura frequency meets the grounding energy of the sand and the quiet presence of the horses — a combination of sensory activation, intentional movement, music, and collective energy that feels unlike any other session.
               </p>
               <a
                 href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20the%2011%3A11%20Workshop%20at%20the%20Horse%20Ranch."
                 class="btn btn--primary wa-link"
+                data-i18n="cta.bookRanch"
+                data-i18n-wa="wa.ranch"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Book Ranch Experience</a
@@ -308,8 +326,8 @@
               <div class="ranch-pillar__img">
                 <img src="images/ranch/01-sand-movement.png" alt="Bare feet grounded in ranch sand during movement" loading="lazy" />
               </div>
-              <h3>Grounding in the Sand</h3>
-              <p>
+              <h3 data-i18n="ranch.sand.title">Grounding in the Sand</h3>
+              <p data-i18n="ranch.sand.body">
                 The workshop begins with your feet on the earth. Practicing on sand deepens grounding — reconnecting you with nature, your body, and the present moment.
               </p>
             </article>
@@ -317,8 +335,8 @@
               <div class="ranch-pillar__img">
                 <img src="images/ranch/08-embrace-horse.png" alt="Quiet connection with a horse at the ranch" loading="lazy" />
               </div>
-              <h3>Horses as Silent Mirrors</h3>
-              <p>
+              <h3 data-i18n="ranch.horses.title">Horses as Silent Mirrors</h3>
+              <p data-i18n="ranch.horses.body">
                 The horses move freely throughout the experience. Their sensitivity to body language and emotion creates a calming presence that invites authenticity and connection.
               </p>
             </article>
@@ -326,8 +344,8 @@
               <div class="ranch-pillar__img">
                 <img src="images/ranch/04-activation-night.png" alt="Alpha Aura activation with glowing headphones at night" loading="lazy" />
               </div>
-              <h3>Music &amp; Activation</h3>
-              <p>
+              <h3 data-i18n="ranch.music.title">Music &amp; Activation</h3>
+              <p data-i18n="ranch.music.body">
                 Carefully selected music guides the journey while 11:11 activation movements awaken the body — releasing tension and making space for renewed vitality.
               </p>
             </article>
@@ -339,22 +357,22 @@
               <img src="images/ranch/10-meditation-sand.png" alt="Group meditation lying on the ranch sand" loading="lazy" />
             </div>
             <div class="ranch-split__copy">
-              <p class="eyebrow">Awakening the Senses</p>
-              <h3>Every detail is intentional</h3>
+              <p class="eyebrow" data-i18n="ranch.senses.eyebrow">Awakening the Senses</p>
+              <h3 data-i18n="ranch.senses.title">Every detail is intentional</h3>
               <div class="gold-line"></div>
-              <p>
+              <p data-i18n="ranch.senses.p1">
                 Fresh air, the touch of the sand, the sounds of nature, and the presence of the horses awaken the senses and invite a deeper state of presence.
               </p>
-              <p>
+              <p data-i18n="ranch.senses.p2">
                 After activation, meditation creates space for stillness — to anchor intentions, gain clarity, and connect with the vision you wish to bring into your life. The final phase is expansion and embodiment: leaving not only inspired, but deeply connected to your own potential.
               </p>
               <ul class="ranch-checklist">
-                <li>Grounding sand energy field</li>
-                <li>Alpha Aura activation movements</li>
-                <li>Horse presence &amp; quiet awareness</li>
-                <li>Music-guided sensory immersion</li>
-                <li>Sunset &amp; moonlight ritual atmosphere</li>
-                <li>Meditation, vision &amp; embodiment</li>
+                <li data-i18n="ranch.check1">Grounding sand energy field</li>
+                <li data-i18n="ranch.check2">Alpha Aura activation movements</li>
+                <li data-i18n="ranch.check3">Horse presence &amp; quiet awareness</li>
+                <li data-i18n="ranch.check4">Music-guided sensory immersion</li>
+                <li data-i18n="ranch.check5">Sunset &amp; moonlight ritual atmosphere</li>
+                <li data-i18n="ranch.check6">Meditation, vision &amp; embodiment</li>
               </ul>
             </div>
           </div>
@@ -362,32 +380,34 @@
           <div class="ranch-mosaic reveal">
             <figure class="ranch-mosaic__item ranch-mosaic__item--lg">
               <img src="images/ranch/09-golden-spin.png" alt="Expressive movement at sunset with horses nearby" loading="lazy" />
-              <figcaption>Sunset activation</figcaption>
+              <figcaption data-i18n="ranch.cap.sunset">Sunset activation</figcaption>
             </figure>
             <figure class="ranch-mosaic__item">
               <img src="images/ranch/03-woman-horse-night.png" alt="Participant with horse and glowing headphones at night" loading="lazy" />
-              <figcaption>Night connection</figcaption>
+              <figcaption data-i18n="ranch.cap.night">Night connection</figcaption>
             </figure>
             <figure class="ranch-mosaic__item">
               <img src="images/ranch/02-horse-touch.png" alt="Gentle touch connecting with a horse" loading="lazy" />
-              <figcaption>Silent presence</figcaption>
+              <figcaption data-i18n="ranch.cap.silent">Silent presence</figcaption>
             </figure>
             <figure class="ranch-mosaic__item ranch-mosaic__item--wide">
               <img src="images/ranch/07-group-sand.png" alt="Group moving together on ranch sand at night" loading="lazy" />
-              <figcaption>Collective energy on the sand</figcaption>
+              <figcaption data-i18n="ranch.cap.collective">Collective energy on the sand</figcaption>
             </figure>
           </div>
 
           <div class="ranch-cta reveal">
-            <p class="eyebrow">Begin at the Ranch</p>
-            <h3>Your frequency. The earth. The horses. One ritual.</h3>
-            <p>
+            <p class="eyebrow" data-i18n="ranch.cta.eyebrow">Begin at the Ranch</p>
+            <h3 data-i18n="ranch.cta.title">Your frequency. The earth. The horses. One ritual.</h3>
+            <p data-i18n="ranch.cta.body">
               The power of the experience lies in the combination — grounding earth, free-roaming horses, Alpha Aura activation, music, meditation, and the collective energy of the group.
             </p>
             <div class="ranch-cta__buttons">
               <a
                 href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20the%2011%3A11%20Workshop%20at%20the%20Horse%20Ranch."
                 class="btn btn--primary wa-link"
+                data-i18n="cta.book1111Ranch"
+                data-i18n-wa="wa.ranch"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Book 11:11 at the Ranch</a
@@ -395,6 +415,8 @@
               <a
                 href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Horse%20Ranch%20sessions."
                 class="btn btn--outline wa-link"
+                data-i18n="cta.whatsapp"
+                data-i18n-wa="wa.ranchInfo"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Message Us on WhatsApp</a
@@ -408,9 +430,9 @@
       <section class="section" id="sessions">
         <div class="container">
           <div class="pillars-intro reveal">
-            <p class="eyebrow">Choose Your Path</p>
-            <h2>Session Options</h2>
-            <p class="lead">Join in the way that resonates with you — open class, private journey, or shared with your circle.</p>
+            <p class="eyebrow" data-i18n="sessions.eyebrow">Choose Your Path</p>
+            <h2 data-i18n="sessions.title">Session Options</h2>
+            <p class="lead" data-i18n="sessions.lead">Join in the way that resonates with you — open class, private journey, or shared with your circle.</p>
           </div>
           <div class="sessions-grid">
             <article class="session-card reveal">
@@ -418,14 +440,16 @@
                 <img src="images/collective-rooftop.jpg" alt="Regular class movement session at golden hour on a rooftop" loading="lazy" />
               </div>
               <div class="session-card__body">
-                <p class="session-card__label">Option 01</p>
-                <h3>Regular Class</h3>
-                <p>
+                <p class="session-card__label" data-i18n="sessions.opt1.label">Option 01</p>
+                <h3 data-i18n="sessions.opt1.title">Regular Class</h3>
+                <p data-i18n="sessions.opt1.body">
                   For individuals who want to join an open Alpha Aura session and experience the energy of the group.
                 </p>
                 <a
                   href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20register%20for%20a%20Regular%20Alpha%20Aura%20class."
                   class="btn btn--dark wa-link"
+                  data-i18n="cta.register"
+                  data-i18n-wa="wa.register"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Register Now</a
@@ -437,14 +461,16 @@
                 <img src="images/sensory-closeup.jpg" alt="Private session moment of deep presence with headphones" loading="lazy" />
               </div>
               <div class="session-card__body">
-                <p class="session-card__label">Option 02</p>
-                <h3>Private Session</h3>
-                <p>
+                <p class="session-card__label" data-i18n="sessions.opt2.label">Option 02</p>
+                <h3 data-i18n="sessions.opt2.title">Private Session</h3>
+                <p data-i18n="sessions.opt2.body">
                   A personalized Alpha Aura experience for those who want a deeper, more intimate transformational journey.
                 </p>
                 <a
                   href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Private%20Alpha%20Aura%20session."
                   class="btn btn--outline wa-link"
+                  data-i18n="cta.private"
+                  data-i18n-wa="wa.private"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Ask About Private Session</a
@@ -456,14 +482,16 @@
                 <img src="images/session-group.jpg" alt="Private group experience with joyful connection" loading="lazy" />
               </div>
               <div class="session-card__body">
-                <p class="session-card__label">Option 03</p>
-                <h3>Private Group Experience</h3>
-                <p>
+                <p class="session-card__label" data-i18n="sessions.opt3.label">Option 03</p>
+                <h3 data-i18n="sessions.opt3.title">Private Group Experience</h3>
+                <p data-i18n="sessions.opt3.body">
                   For friends, families, private celebrations, or small groups who want to share a powerful transformational experience together.
                 </p>
                 <a
                   href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20a%20Private%20Group%20Alpha%20Aura%20experience."
                   class="btn btn--outline wa-link"
+                  data-i18n="cta.group"
+                  data-i18n-wa="wa.group"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Book for Your Group</a
@@ -482,29 +510,31 @@
         <div class="experience-1111__overlay" aria-hidden="true"></div>
         <div class="container experience-1111__inner">
           <div class="reveal">
-            <p class="experience-1111__time">11:11<span>Signature Experience</span></p>
+            <p class="experience-1111__time">11:11<span data-i18n="e1111.tag">Signature Experience</span></p>
           </div>
           <div class="reveal reveal-delay-1">
-            <p class="eyebrow">60-Minute Journey</p>
-            <h2>The 11:11 Experience</h2>
-            <p class="text-light" style="max-width: 36rem; margin-bottom: 0">
+            <p class="eyebrow" data-i18n="e1111.eyebrow">60-Minute Journey</p>
+            <h2 data-i18n="e1111.title">The 11:11 Experience</h2>
+            <p class="text-light" style="max-width: 36rem; margin-bottom: 0" data-i18n="e1111.body">
               A 60-minute transformational journey designed to activate your inner Alpha and expand your Aura through dynamic movement, sensory activation, and mindset shifts.
             </p>
             <ul class="experience-1111__list">
-              <li>Physical, mental &amp; emotional activation</li>
-              <li>Energetic expansion &amp; higher frequency</li>
-              <li>Collective momentum</li>
-              <li>Confidence &amp; clarity</li>
-              <li>Deep connection</li>
-              <li>Embodied freedom</li>
+              <li data-i18n="e1111.li1">Physical, mental &amp; emotional activation</li>
+              <li data-i18n="e1111.li2">Energetic expansion &amp; higher frequency</li>
+              <li data-i18n="e1111.li3">Collective momentum</li>
+              <li data-i18n="e1111.li4">Confidence &amp; clarity</li>
+              <li data-i18n="e1111.li5">Deep connection</li>
+              <li data-i18n="e1111.li6">Embodied freedom</li>
             </ul>
             <p class="ranch-note">
-              Now also available at our featured location —
-              <a href="#ranch">Horse Ranch</a>
+              <span data-i18n="e1111.note">Now also available at our featured location —</span>
+              <a href="#ranch" data-i18n="e1111.noteLink">Horse Ranch</a>
             </p>
             <a
               href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20the%2011%3A11%20Experience."
               class="btn btn--primary wa-link"
+              data-i18n="cta.book1111"
+              data-i18n-wa="wa.1111"
               target="_blank"
               rel="noopener noreferrer"
               >Book 11:11 Experience</a
@@ -517,20 +547,20 @@
       <section class="section section--beige benefits" id="benefits">
         <div class="container">
           <div class="reveal">
-            <p class="eyebrow">After Your Session</p>
-            <h2>Why Join Alpha Aura</h2>
-            <p class="lead">
+            <p class="eyebrow" data-i18n="benefits.eyebrow">After Your Session</p>
+            <h2 data-i18n="benefits.title">Why Join Alpha Aura</h2>
+            <p class="lead" data-i18n="benefits.lead">
               Many guests describe feeling more alive, grounded, and connected — in ways words alone cannot capture.
             </p>
           </div>
           <div class="benefits-grid">
-            <div class="benefit-item reveal"><strong>Connected</strong> More in tune with yourself</div>
-            <div class="benefit-item reveal reveal-delay-1"><strong>Confident</strong> Clearer in your presence</div>
-            <div class="benefit-item reveal reveal-delay-1"><strong>Alive</strong> More open and energized</div>
-            <div class="benefit-item reveal reveal-delay-2"><strong>Grounded</strong> Steady in body and mind</div>
-            <div class="benefit-item reveal reveal-delay-2"><strong>Free</strong> Emotionally lighter and expansive</div>
-            <div class="benefit-item reveal reveal-delay-3"><strong>Aligned</strong> Closer to your inner power</div>
-            <div class="benefit-item reveal reveal-delay-3"><strong>Energized</strong> Renewed vitality and clarity</div>
+            <div class="benefit-item reveal"><span data-i18n-html="benefits.connected.sub" data-i18n-strong="benefits.connected"><strong>Connected</strong> More in tune with yourself</span></div>
+            <div class="benefit-item reveal reveal-delay-1"><span data-i18n-html="benefits.confident.sub" data-i18n-strong="benefits.confident"><strong>Confident</strong> Clearer in your presence</span></div>
+            <div class="benefit-item reveal reveal-delay-1"><span data-i18n-html="benefits.alive.sub" data-i18n-strong="benefits.alive"><strong>Alive</strong> More open and energized</span></div>
+            <div class="benefit-item reveal reveal-delay-2"><span data-i18n-html="benefits.grounded.sub" data-i18n-strong="benefits.grounded"><strong>Grounded</strong> Steady in body and mind</span></div>
+            <div class="benefit-item reveal reveal-delay-2"><span data-i18n-html="benefits.free.sub" data-i18n-strong="benefits.free"><strong>Free</strong> Emotionally lighter and expansive</span></div>
+            <div class="benefit-item reveal reveal-delay-3"><span data-i18n-html="benefits.aligned.sub" data-i18n-strong="benefits.aligned"><strong>Aligned</strong> Closer to your inner power</span></div>
+            <div class="benefit-item reveal reveal-delay-3"><span data-i18n-html="benefits.energized.sub" data-i18n-strong="benefits.energized"><strong>Energized</strong> Renewed vitality and clarity</span></div>
           </div>
         </div>
       </section>
@@ -539,82 +569,82 @@
       <section class="section" id="atmosphere">
         <div class="container">
           <div class="gallery-header reveal">
-            <p class="eyebrow">The Atmosphere</p>
-            <h2>Feel the Energy Before You Arrive</h2>
-            <p class="lead">Movement. Connection. Rooftop light. Ranch rituals. Human moments that stay with you.</p>
+            <p class="eyebrow" data-i18n="atmosphere.eyebrow">The Atmosphere</p>
+            <h2 data-i18n="atmosphere.title">Feel the Energy Before You Arrive</h2>
+            <p class="lead" data-i18n="atmosphere.lead">Movement. Connection. Rooftop light. Ranch rituals. Human moments that stay with you.</p>
           </div>
           <div class="gallery-grid">
             <figure class="gallery-item gallery-item--feature reveal">
               <img src="images/ranch/12-ritual-circle.png" alt="Night ritual at Horse Ranch with glowing headphones" loading="lazy" />
-              <figcaption class="gallery-item__caption">Ranch ritual</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.ranchRitual">Ranch ritual</figcaption>
             </figure>
             <figure class="gallery-item gallery-item--wide reveal reveal-delay-1">
               <img src="images/atmosphere/13-live-class.png" alt="Live Alpha Aura movement class with collective energy" loading="lazy" />
-              <figcaption class="gallery-item__caption">Live class energy</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.liveClass">Live class energy</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-1">
               <img src="images/ranch/09-golden-spin.png" alt="Sunset movement at Horse Ranch" loading="lazy" />
-              <figcaption class="gallery-item__caption">Ranch sunset</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.ranchSunset">Ranch sunset</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-2">
               <img src="images/atmosphere/01-rooftop-connection.png" alt="Rooftop connection moment between participants" loading="lazy" />
-              <figcaption class="gallery-item__caption">Rooftop connection</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.rooftop">Rooftop connection</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-2">
               <img src="images/atmosphere/02-movement-headphones.png" alt="Woman feeling the music through headphones" loading="lazy" />
-              <figcaption class="gallery-item__caption">Feel the rhythm</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.rhythm">Feel the rhythm</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-2">
               <img src="images/atmosphere/03-energy-in-motion.png" alt="Dynamic movement during session" loading="lazy" />
-              <figcaption class="gallery-item__caption">Energy in motion</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.energyMotion">Energy in motion</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-3">
               <img src="images/atmosphere/04-pure-joy.png" alt="Joyful participant with arms raised" loading="lazy" />
-              <figcaption class="gallery-item__caption">Pure joy</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.joy">Pure joy</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-3">
               <img src="images/atmosphere/05-golden-moment.png" alt="Friends sharing a golden light moment" loading="lazy" />
-              <figcaption class="gallery-item__caption">Golden moment</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.golden">Golden moment</figcaption>
             </figure>
             <figure class="gallery-item gallery-item--wide reveal reveal-delay-3">
               <img src="images/atmosphere/12-collective-peace.png" alt="Group resting in collective peace" loading="lazy" />
-              <figcaption class="gallery-item__caption">Collective peace</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.peace">Collective peace</figcaption>
             </figure>
             <figure class="gallery-item reveal">
               <img src="images/atmosphere/06-community-circle.png" alt="Community gathering outdoors" loading="lazy" />
-              <figcaption class="gallery-item__caption">Community circle</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.community">Community circle</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-1">
               <img src="images/atmosphere/07-instructors-smile.png" alt="Instructors smiling together" loading="lazy" />
-              <figcaption class="gallery-item__caption">Human moments</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.human">Human moments</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-1">
               <img src="images/atmosphere/09-guided-energy.png" alt="Guided session with glowing headphones" loading="lazy" />
-              <figcaption class="gallery-item__caption">Guided energy</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.guided">Guided energy</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-2">
               <img src="images/atmosphere/10-friends-together.png" alt="Friends together after session" loading="lazy" />
-              <figcaption class="gallery-item__caption">Friends together</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.friends">Friends together</figcaption>
             </figure>
             <figure class="gallery-item gallery-item--wide reveal reveal-delay-2">
               <img src="images/atmosphere/11-embrace-freedom.png" alt="Embrace and freedom in movement" loading="lazy" />
-              <figcaption class="gallery-item__caption">Embrace &amp; freedom</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.embrace">Embrace &amp; freedom</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-2">
               <img src="images/movement.jpg" alt="Dynamic expressive movement at golden hour" loading="lazy" />
-              <figcaption class="gallery-item__caption">Dynamic movement</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.dynamic">Dynamic movement</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-3">
               <img src="images/collective-rooftop.jpg" alt="Rooftop group experience" loading="lazy" />
-              <figcaption class="gallery-item__caption">Rooftop light</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.rooftopLight">Rooftop light</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-3">
               <img src="images/sensory-closeup.jpg" alt="Emotional close-up" loading="lazy" />
-              <figcaption class="gallery-item__caption">Sensory presence</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.sensory">Sensory presence</figcaption>
             </figure>
             <figure class="gallery-item reveal reveal-delay-3">
               <img src="images/energy-fabric.jpg" alt="Hands holding flowing orange fabric" loading="lazy" />
-              <figcaption class="gallery-item__caption">Energy expansion</figcaption>
+              <figcaption class="gallery-item__caption" data-i18n="cap.expansion">Energy expansion</figcaption>
             </figure>
           </div>
         </div>
@@ -623,13 +653,15 @@
       <!-- 10. Final CTA -->
       <section class="final-cta" id="final-cta">
         <div class="container reveal">
-          <p class="eyebrow">Begin Your Journey</p>
-          <h2>Your energy is already within you. Let's activate it.</h2>
-          <p>Take the first step toward confidence, clarity, and higher frequency.</p>
+          <p class="eyebrow" data-i18n="final.eyebrow">Begin Your Journey</p>
+          <h2 data-i18n="final.title">Your energy is already within you. Let's activate it.</h2>
+          <p data-i18n="final.body">Take the first step toward confidence, clarity, and higher frequency.</p>
           <div class="final-cta__buttons">
             <a
               href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20book%20an%20Alpha%20Aura%20session."
               class="btn btn--primary wa-link"
+              data-i18n="cta.bookSession"
+              data-i18n-wa="wa.book"
               target="_blank"
               rel="noopener noreferrer"
               >Book Your Session</a
@@ -637,6 +669,9 @@
             <a
               href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
               class="btn btn--outline wa-link"
+              data-i18n="cta.whatsapp"
+              data-i18n-wa="wa.default"
+              data-i18n-keep-html
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -655,13 +690,14 @@
     <footer class="footer">
       <div class="container">
         <div class="logo">Alpha <span>Aura</span></div>
-        <p>&copy; <span id="year"></span> Alpha Aura. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">Alpha Aura. All rights reserved.</span></p>
       </div>
     </footer>
 
     <a
       href="https://api.whatsapp.com/send?phone=972523754891&text=Hello%2C%20I%27d%20like%20to%20learn%20more%20about%20Alpha%20Aura%20and%20book%20a%20session."
       class="whatsapp-float wa-link"
+      data-i18n-wa="wa.default"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Message us on WhatsApp"
@@ -678,6 +714,7 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
