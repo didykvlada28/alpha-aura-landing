@@ -1325,6 +1325,24 @@ h3 {
     min-height: 240px;
   }
 
+  .ranch-split__media {
+    grid-template-columns: 1fr;
+  }
+
+  .ranch-split__media img,
+  .ranch-split__media img:first-child {
+    min-height: 16rem;
+  }
+
+  .ranch-cta__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ranch-cta__buttons .btn {
+    width: 100%;
+  }
+
   .experience-1111__list {
     grid-template-columns: 1fr;
   }
