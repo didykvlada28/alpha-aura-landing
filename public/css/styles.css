@@ -520,15 +520,17 @@ h3 {
 /* Experience split */
 .experience {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(240px, 38%) 1fr;
   gap: 0;
-  min-height: 32rem;
+  min-height: 0;
   background: var(--soft-black);
+  align-items: stretch;
 }
 
 .experience__image {
   position: relative;
-  min-height: 28rem;
+  min-height: 20rem;
+  max-height: 28rem;
   overflow: hidden;
 }
 
@@ -536,6 +538,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%;
 }
 
 .experience__image::after {
@@ -1266,9 +1269,13 @@ h3 {
   }
 
   .experience__image {
-    min-height: 22rem;
+    min-height: 14rem;
+    max-height: 18rem;
   }
-}
+
+  .experience__copy {
+    padding: clamp(2.5rem, 6vw, 3.5rem);
+  }
 
 @media (max-width: 768px) {
   .nav-toggle {
