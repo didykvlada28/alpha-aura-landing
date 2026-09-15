@@ -34,6 +34,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
 body {
@@ -43,11 +44,18 @@ body {
   line-height: 1.65;
   color: var(--soft-black);
   background: var(--ivory);
-  overflow-x: hidden;
+  overflow-x: clip;
+  min-height: 100%;
 }
 
+/* Scroll lock while mobile menu is open (top offset set in JS) */
 body.nav-open {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  overscroll-behavior: none;
 }
 
 img {
@@ -136,7 +144,9 @@ h3 {
   background: var(--beige);
 }
 
-/* Header */
+/* Header
+   backdrop-filter lives on ::before so it does NOT create a containing block
+   that traps position:fixed mobile nav inside the short header bar */
 .header {
   position: fixed;
   top: 0;
@@ -146,13 +156,29 @@ h3 {
   height: var(--header-h);
   display: flex;
   align-items: center;
-  transition: background 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  overflow: visible;
+  transition: box-shadow 0.5s var(--ease);
 }
 
 .header.is-scrolled {
-  background: rgba(26, 24, 22, 0.92);
-  backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.header.is-scrolled::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(26, 24, 22, 0.92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+}
+
+body.nav-open .header.is-scrolled::before {
+  background: var(--soft-black);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .header__inner {
@@ -162,6 +188,8 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -1311,10 +1339,17 @@ h3 {
   .experience__copy {
     padding: clamp(2.5rem, 6vw, 3.5rem);
   }
+}
 
 @media (max-width: 768px) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .nav-toggle {
     display: flex;
+    z-index: 220;
+    position: relative;
   }
 
   .nav {
@@ -1322,21 +1357,50 @@ h3 {
     top: var(--header-h);
     left: 0;
     right: 0;
-    bottom: 0;
+    width: 100%;
+    height: calc(100svh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
     flex-direction: column;
     justify-content: center;
-    gap: 2.5rem;
-    background: rgba(26, 24, 22, 0.98);
-    transform: translateX(100%);
-    transition: transform 0.45s var(--ease-out);
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.5rem 3rem;
+    margin: 0;
+    background: var(--soft-black);
+    color: var(--ivory);
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.4s var(--ease-out), visibility 0.4s;
+    z-index: 200;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    pointer-events: none;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   .nav.is-open {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .nav a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    color: rgba(249, 246, 241, 0.92);
+    padding: 0.35rem 0.5rem;
+  }
+
+  .nav a:hover,
+  .nav a:focus-visible {
+    color: var(--ivory);
+  }
+
+  body.nav-open .header {
+    background: var(--soft-black);
   }
 
   .header__actions .btn--ghost {
@@ -1347,8 +1411,10 @@ h3 {
     margin-right: 0.15rem;
   }
 
-  .nav a {
-    letter-spacing: 0.1em;
+  /* Lighter reveals — fewer compositor jumps while scrolling */
+  .reveal {
+    transform: translateY(14px);
+    transition-duration: 0.55s;
   }
 
   .desire {
