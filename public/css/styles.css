@@ -945,6 +945,11 @@ body.nav-open .header.is-scrolled::before {
   margin-bottom: clamp(3.5rem, 7vw, 5rem);
 }
 
+.ranch-split--copy-only {
+  grid-template-columns: 1fr;
+  max-width: 40rem;
+}
+
 .ranch-split__media {
   display: grid;
   grid-template-columns: 1fr 1fr;
