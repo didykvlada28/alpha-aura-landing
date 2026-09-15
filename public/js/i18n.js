@@ -6,11 +6,12 @@ window.ALPHA_AURA_I18N = {
   en: {
     "meta.title": "Alpha Aura — Activate Your Inner Power",
     "meta.description":
-      "Alpha Aura — A premium transformational experience of movement, energy, mindset, and connection. Featured 11:11 workshops at Horse Ranch.",
+      "Alpha Aura — A premium transformational experience of movement, energy, mindset, and connection. Sessions at Horse Ranch and Jewel Hotel rooftop, Tel Aviv.",
     "nav.experience": "Experience",
     "nav.sessions": "Sessions",
     "nav.1111": "11:11",
     "nav.ranch": "Horse Ranch",
+    "nav.jewel": "Jewel Hotel",
     "nav.atmosphere": "Atmosphere",
     "nav.aria": "Main",
     "nav.open": "Open menu",
@@ -24,6 +25,7 @@ window.ALPHA_AURA_I18N = {
     "cta.book1111": "Book 11:11 Experience",
     "cta.bookRanch": "Book Ranch Experience",
     "cta.book1111Ranch": "Book 11:11 at the Ranch",
+    "cta.bookJewel": "Book Jewel Hotel Session",
     "hero.eyebrow": "Premium Transformation",
     "hero.title": "Activate Your Inner Power",
     "hero.sub":
@@ -107,6 +109,32 @@ window.ALPHA_AURA_I18N = {
     "ranch.cta.title": "Your frequency. The earth. The horses. One ritual.",
     "ranch.cta.body":
       "The power of the experience lies in the combination — grounding earth, free-roaming horses, Alpha Aura activation, music, meditation, and the collective energy of the group.",
+    "jewel.eyebrow": "Featured Location",
+    "jewel.title": "Alpha Aura at Jewel Hotel",
+    "jewel.lead":
+      "An elevated rooftop experience in the heart of Tel Aviv — with open sky, city energy, and a view of the sea.",
+    "jewel.hero.eyebrow": "On the Hotel Rooftop",
+    "jewel.hero.caption":
+      "High above the city, movement and connection meet the horizon — a refined urban sanctuary with the Mediterranean in sight.",
+    "jewel.why.eyebrow": "Central Tel Aviv",
+    "jewel.why.title": "Why Jewel Hotel",
+    "jewel.why.lead":
+      "Located in the center of Tel Aviv, Jewel Hotel offers a rare setting for Alpha Aura: a hotel rooftop open to the sky, with a sea view that expands the experience.",
+    "jewel.why.body":
+      "Here, the energy of the city softens into presence. Light, air, and the horizon become part of the journey — an elevated space for activation, clarity, and collective momentum without leaving the heart of Tel Aviv.",
+    "jewel.sea.title": "Sea View",
+    "jewel.sea.body":
+      "Practice with the Mediterranean as your backdrop — a sense of openness and expansion that mirrors the inner journey of Alpha Aura.",
+    "jewel.rooftop.title": "Hotel Rooftop",
+    "jewel.rooftop.body":
+      "Sessions take place on the rooftop of Jewel Hotel — an elevated, refined setting designed for presence, movement, and collective energy above the city.",
+    "jewel.city.title": "In the City Center",
+    "jewel.city.body":
+      "Easy to reach in central Tel Aviv, yet removed from street-level noise — a private-feeling rooftop space for transformation within the pulse of the city.",
+    "jewel.cta.eyebrow": "Begin on the Rooftop",
+    "jewel.cta.title": "City light. Sea horizon. Your inner power — activated above Tel Aviv.",
+    "jewel.cta.body":
+      "Jewel Hotel is one of our featured Alpha Aura locations — ideal when you want the full experience in the heart of the city, on a rooftop overlooking the sea.",
     "sessions.eyebrow": "Choose Your Path",
     "sessions.title": "Session Options",
     "sessions.lead":
@@ -134,8 +162,9 @@ window.ALPHA_AURA_I18N = {
     "e1111.li4": "Confidence & clarity",
     "e1111.li5": "Deep connection",
     "e1111.li6": "Embodied freedom",
-    "e1111.note": "Now also available at our featured location —",
+    "e1111.note": "Available at our featured locations —",
     "e1111.noteLink": "Horse Ranch",
+    "e1111.noteJewel": "Jewel Hotel",
     "benefits.eyebrow": "After Your Session",
     "benefits.title": "Why Join Alpha Aura",
     "benefits.lead":
@@ -189,15 +218,18 @@ window.ALPHA_AURA_I18N = {
     "wa.1111": "Hello, I'd like to book the 11:11 Experience.",
     "wa.ranch": "Hello, I'd like to book the 11:11 Workshop at the Horse Ranch.",
     "wa.ranchInfo": "Hello, I'd like to learn more about Horse Ranch sessions.",
+    "wa.jewel": "Hello, I'd like to book an Alpha Aura session at Jewel Hotel.",
+    "wa.jewelInfo": "Hello, I'd like to learn more about Alpha Aura at Jewel Hotel.",
   },
   fr: {
     "meta.title": "Alpha Aura — Activez Votre Pouvoir Intérieur",
     "meta.description":
-      "Alpha Aura — Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion. Ateliers 11:11 au Horse Ranch.",
+      "Alpha Aura — Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion. Séances au Horse Ranch et sur le rooftop du Jewel Hotel, Tel Aviv.",
     "nav.experience": "Expérience",
     "nav.sessions": "Séances",
     "nav.1111": "11:11",
     "nav.ranch": "Horse Ranch",
+    "nav.jewel": "Jewel Hotel",
     "nav.atmosphere": "Atmosphère",
     "nav.aria": "Principal",
     "nav.open": "Ouvrir le menu",
@@ -211,6 +243,7 @@ window.ALPHA_AURA_I18N = {
     "cta.book1111": "Réserver l'expérience 11:11",
     "cta.bookRanch": "Réserver au Ranch",
     "cta.book1111Ranch": "Réserver le 11:11 au Ranch",
+    "cta.bookJewel": "Réserver au Jewel Hotel",
     "hero.eyebrow": "Transformation Premium",
     "hero.title": "Activez Votre Pouvoir Intérieur",
     "hero.sub":
@@ -294,6 +327,32 @@ window.ALPHA_AURA_I18N = {
     "ranch.cta.title": "Votre fréquence. La terre. Les chevaux. Un seul rituel.",
     "ranch.cta.body":
       "La force de l'expérience naît de l'ensemble — terre ancrante, chevaux en liberté, activation Alpha Aura, musique, méditation et énergie collective du groupe.",
+    "jewel.eyebrow": "Lieu Phare",
+    "jewel.title": "Alpha Aura au Jewel Hotel",
+    "jewel.lead":
+      "Une expérience rooftop élevée au cœur de Tel Aviv — ciel ouvert, énergie de la ville, et vue sur la mer.",
+    "jewel.hero.eyebrow": "Sur le Rooftop de l'Hôtel",
+    "jewel.hero.caption":
+      "Au-dessus de la ville, mouvement et connexion rencontrent l'horizon — un sanctuaire urbain raffiné face à la Méditerranée.",
+    "jewel.why.eyebrow": "Tel Aviv Centre",
+    "jewel.why.title": "Pourquoi le Jewel Hotel",
+    "jewel.why.lead":
+      "Situé au centre de Tel Aviv, le Jewel Hotel offre un cadre rare pour Alpha Aura : le rooftop d'un hôtel ouvert sur le ciel, avec une vue mer qui élargit l'expérience.",
+    "jewel.why.body":
+      "Ici, l'énergie de la ville s'adoucit en présence. La lumière, l'air et l'horizon font partie du voyage — un espace élevé pour l'activation, la clarté et l'élan collectif, sans quitter le cœur de Tel Aviv.",
+    "jewel.sea.title": "Vue Mer",
+    "jewel.sea.body":
+      "Pratiquez avec la Méditerranée en toile de fond — une sensation d'ouverture et d'expansion qui reflète le voyage intérieur d'Alpha Aura.",
+    "jewel.rooftop.title": "Rooftop de l'Hôtel",
+    "jewel.rooftop.body":
+      "Les séances se déroulent sur le rooftop du Jewel Hotel — un cadre élevé et raffiné pour la présence, le mouvement et l'énergie collective au-dessus de la ville.",
+    "jewel.city.title": "En Plein Centre",
+    "jewel.city.body":
+      "Facile d'accès au centre de Tel Aviv, tout en restant à l'écart du bruit de la rue — un rooftop à l'ambiance privée pour la transformation au cœur du pouls urbain.",
+    "jewel.cta.eyebrow": "Commencer sur le Rooftop",
+    "jewel.cta.title": "Lumière de la ville. Horizon marin. Votre pouvoir intérieur — activé au-dessus de Tel Aviv.",
+    "jewel.cta.body":
+      "Le Jewel Hotel est l'un de nos lieux Alpha Aura phares — idéal lorsque vous souhaitez l'expérience complète au cœur de la ville, sur un rooftop face à la mer.",
     "sessions.eyebrow": "Choisissez Votre Chemin",
     "sessions.title": "Options de Séance",
     "sessions.lead":
@@ -321,8 +380,9 @@ window.ALPHA_AURA_I18N = {
     "e1111.li4": "Confiance & clarté",
     "e1111.li5": "Connexion profonde",
     "e1111.li6": "Liberté incarnée",
-    "e1111.note": "Désormais aussi disponible dans notre lieu phare —",
+    "e1111.note": "Disponible dans nos lieux phares —",
     "e1111.noteLink": "Horse Ranch",
+    "e1111.noteJewel": "Jewel Hotel",
     "benefits.eyebrow": "Après Votre Séance",
     "benefits.title": "Pourquoi Rejoindre Alpha Aura",
     "benefits.lead":
@@ -379,6 +439,8 @@ window.ALPHA_AURA_I18N = {
     "wa.1111": "Bonjour, j'aimerais réserver l'expérience 11:11.",
     "wa.ranch": "Bonjour, j'aimerais réserver l'atelier 11:11 au Horse Ranch.",
     "wa.ranchInfo": "Bonjour, j'aimerais en savoir plus sur les séances au Horse Ranch.",
+    "wa.jewel": "Bonjour, j'aimerais réserver une séance Alpha Aura au Jewel Hotel.",
+    "wa.jewelInfo": "Bonjour, j'aimerais en savoir plus sur Alpha Aura au Jewel Hotel.",
   },
 };
 
