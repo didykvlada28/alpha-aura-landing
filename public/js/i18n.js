@@ -267,7 +267,7 @@ window.ALPHA_AURA_I18N = {
       "Alignement, expansion et pouvoir intérieur — ressentis dans le corps, pas seulement compris par l'esprit.",
     "experience.p2":
       "Un atelier du matin sur un rooftop au cœur de Tel Aviv, avec vue sur la mer.",
-    "experience.tagline": "Commencez votre journée juste.",
+    "experience.tagline": "Commencez votre journée du bon pied.",
     "jewel.eyebrow": "Lieu Phare",
     "jewel.title": "Alpha Aura au Jewel Hotel",
     "jewel.lead":
