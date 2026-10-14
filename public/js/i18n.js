@@ -78,9 +78,10 @@ window.ALPHA_AURA_I18N = {
     "experience.eyebrow": "Feel It In Your Body",
     "experience.title": "The Alpha Aura Experience",
     "experience.p1":
-      "Through Alpha Aura, abstract ideas like alignment, expansion, and inner power become something you can actually feel in your body.",
+      "Alignment, expansion, and inner power — felt in the body, not just understood in the mind.",
     "experience.p2":
-      "The method activates core energy, sharpens the senses, and helps you embody confidence, clarity, and freedom — not as concepts, but as lived experience.",
+      "A morning workshop on a rooftop in the heart of Tel Aviv, with a view of the sea.",
+    "experience.tagline": "Start your day right.",
     "jewel.eyebrow": "Featured Location",
     "jewel.title": "Alpha Aura at Jewel Hotel",
     "jewel.lead":
@@ -263,9 +264,10 @@ window.ALPHA_AURA_I18N = {
     "experience.eyebrow": "Le Ressentir dans le Corps",
     "experience.title": "L'Expérience Alpha Aura",
     "experience.p1":
-      "Avec Alpha Aura, des notions comme l'alignement, l'expansion et le pouvoir intérieur deviennent quelque chose que vous pouvez vraiment sentir dans votre corps.",
+      "Alignement, expansion et pouvoir intérieur — ressentis dans le corps, pas seulement compris par l'esprit.",
     "experience.p2":
-      "La méthode active l'énergie centrale, affine les sens et vous aide à incarner confiance, clarté et liberté — non comme des concepts, mais comme une expérience vécue.",
+      "Un atelier du matin sur un rooftop au cœur de Tel Aviv, avec vue sur la mer.",
+    "experience.tagline": "Commencez votre journée juste.",
     "jewel.eyebrow": "Lieu Phare",
     "jewel.title": "Alpha Aura au Jewel Hotel",
     "jewel.lead":
