@@ -16,7 +16,10 @@ window.ALPHA_AURA_I18N = {
     "nav.open": "Open menu",
     "cta.message": "Message Us",
     "cta.book": "Book Session",
+    "cta.bookNow": "Book Now",
+    "cta.bookSpot": "Book Your Spot",
     "cta.bookSession": "Book Your Session",
+    "cta.askWhatsapp": "Ask Us on WhatsApp",
     "cta.whatsapp": "Message Us on WhatsApp",
     "cta.register": "Register Now",
     "cta.private": "Ask About Private Session",
@@ -28,14 +31,26 @@ window.ALPHA_AURA_I18N = {
     "hero.sub":
       "A premium transformational experience of movement, energy, mindset, and connection.",
     "hero.support":
-      "Join Alpha Aura and reconnect with your confidence, clarity, freedom, and higher energy.",
+      "Reconnect with confidence, clarity, and a higher frequency — in an intimate group experience.",
+    "hero.exclusive": "Small groups. Limited places available.",
     "hero.discover": "Discover",
     "desire.eyebrow": "Return to Yourself",
     "desire.title": "Your energy is still there — waiting to be felt again",
     "desire.lead":
       "In a world full of noise and distraction, it is easy to feel disconnected from your own energy.",
     "desire.body":
-      "Alpha Aura helps you return to yourself — through movement, awareness, breath, mindset, and collective energy. Not by pushing harder, but by awakening what is already within you.",
+      "Alpha Aura helps you return to yourself — through movement, awareness, breath, mindset, and collective energy. Leave feeling more alive, present, and connected to your own power.",
+    "exclusive.intimate": "An intimate experience. Limited places available.",
+    "exclusive.small": "Small groups. Powerful energy.",
+    "exclusive.limited": "Limited spots for each experience.",
+    "exclusive.secure": "Secure your place in the next Alpha Aura session.",
+    "invite.eyebrow": "Your Next Experience Awaits",
+    "invite.title": "11:11 Signature Experience",
+    "invite.lead":
+      "60 minutes of movement, energy, connection, and transformation — designed to reconnect you with your inner power.",
+    "invite.price": "₪180",
+    "invite.per": "/ person",
+    "invite.note": "Limited places per session. Secure your place while it lasts.",
     "about.eyebrow": "The Journey",
     "about.title": "What Is Alpha Aura",
     "about.lead":
@@ -159,7 +174,7 @@ window.ALPHA_AURA_I18N = {
     "cap.expansion": "Energy expansion",
     "final.eyebrow": "Begin Your Journey",
     "final.title": "Your energy is already within you. Let's activate it.",
-    "final.body": "Take the first step toward confidence, clarity, and higher frequency.",
+    "final.body": "Your next chapter starts here. Reserve your place.",
     "footer.rights": "Alpha Aura. All rights reserved.",
     "wa.float": "Message us on WhatsApp",
     "wa.default": "Hello, I'd like to learn more about Alpha Aura and book a session.",
@@ -184,7 +199,10 @@ window.ALPHA_AURA_I18N = {
     "nav.open": "Ouvrir le menu",
     "cta.message": "Nous écrire",
     "cta.book": "Réserver",
+    "cta.bookNow": "Réserver",
+    "cta.bookSpot": "Réserver ma place",
     "cta.bookSession": "Réserver votre séance",
+    "cta.askWhatsapp": "Nous écrire sur WhatsApp",
     "cta.whatsapp": "Nous écrire sur WhatsApp",
     "cta.register": "S'inscrire",
     "cta.private": "Demander une séance privée",
@@ -196,14 +214,26 @@ window.ALPHA_AURA_I18N = {
     "hero.sub":
       "Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion.",
     "hero.support":
-      "Rejoignez Alpha Aura et renouez avec votre confiance, votre clarté, votre liberté et une énergie plus haute.",
+      "Retrouvez confiance, clarté et une fréquence plus haute — dans une expérience de groupe intime.",
+    "hero.exclusive": "Petits groupes. Places limitées.",
     "hero.discover": "Découvrir",
     "desire.eyebrow": "Revenir à Soi",
     "desire.title": "Votre énergie est toujours là — prête à être ressentie à nouveau",
     "desire.lead":
       "Dans un monde saturé de bruit et de distractions, il est facile de se sentir déconnecté de sa propre énergie.",
     "desire.body":
-      "Alpha Aura vous aide à revenir à vous — par le mouvement, la conscience, le souffle, le mindset et l'énergie collective. Non pas en forçant davantage, mais en éveillant ce qui est déjà en vous.",
+      "Alpha Aura vous aide à revenir à vous — par le mouvement, la conscience, le souffle, le mindset et l'énergie collective. Repartez plus vivant, plus présent, plus relié à votre pouvoir.",
+    "exclusive.intimate": "Une expérience intime. Places limitées.",
+    "exclusive.small": "Petits groupes. Énergie puissante.",
+    "exclusive.limited": "Places limitées pour chaque expérience.",
+    "exclusive.secure": "Réservez votre place pour la prochaine séance Alpha Aura.",
+    "invite.eyebrow": "Votre Prochaine Expérience Vous Attend",
+    "invite.title": "Expérience Signature 11:11",
+    "invite.lead":
+      "60 minutes de mouvement, d'énergie, de connexion et de transformation — conçues pour vous reconnecter à votre pouvoir intérieur.",
+    "invite.price": "₪180",
+    "invite.per": "/ personne",
+    "invite.note": "Places limitées par séance. Réservez la vôtre tant qu'il en reste.",
     "about.eyebrow": "Le Voyage",
     "about.title": "Qu'est-ce qu'Alpha Aura",
     "about.lead":
@@ -327,8 +357,7 @@ window.ALPHA_AURA_I18N = {
     "cap.expansion": "Expansion d'énergie",
     "final.eyebrow": "Commencez Votre Voyage",
     "final.title": "Votre énergie est déjà en vous. Activons-la.",
-    "final.body":
-      "Faites le premier pas vers la confiance, la clarté et une fréquence plus haute.",
+    "final.body": "Votre prochain chapitre commence ici. Réservez votre place.",
     "footer.rights": "Alpha Aura. Tous droits réservés.",
     "wa.float": "Nous écrire sur WhatsApp",
     "wa.default":

@@ -12,20 +12,23 @@
     const label = (el.getAttribute("data-fb-label") || el.textContent || "")
       .replace(/\s+/g, " ")
       .trim();
-    const section = el.closest("section, header, footer");
+    const section = el.closest("section, header, footer, .sticky-book");
     const sectionId = section?.id || section?.className?.split(" ")[0] || "page";
+    const isBookday = el.classList.contains("bookday-link");
 
     fbq("track", CONVERSION_EVENT, {
       content_name: label || "CTA click",
       content_category: sectionId,
-      destination: "whatsapp",
+      destination: isBookday ? "bookday" : "whatsapp",
     });
   }
 
   function bindConversionTracking() {
-    document.querySelectorAll("a.btn, a.whatsapp-float, .nav a.wa-link").forEach((el) => {
-      el.addEventListener("click", () => trackConversion(el), { passive: true });
-    });
+    document
+      .querySelectorAll("a.btn, a.whatsapp-float, .nav a.wa-link, a.bookday-link")
+      .forEach((el) => {
+        el.addEventListener("click", () => trackConversion(el), { passive: true });
+      });
   }
 
   bindConversionTracking();
