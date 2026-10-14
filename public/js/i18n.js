@@ -6,12 +6,11 @@ window.ALPHA_AURA_I18N = {
   en: {
     "meta.title": "Alpha Aura — Activate Your Inner Power",
     "meta.description":
-      "Alpha Aura — A premium transformational experience of movement, energy, mindset, and connection. Sessions at Horse Ranch and Jewel Hotel rooftop, Tel Aviv.",
+      "Alpha Aura — A premium transformational experience of movement, energy, mindset, and connection. Sessions at Jewel Hotel rooftop, Tel Aviv.",
     "nav.experience": "Experience",
     "nav.sessions": "Sessions",
     "nav.1111": "11:11",
     "nav.jewel": "Jewel Hotel",
-    "nav.ranch": "Horse Ranch",
     "nav.atmosphere": "Atmosphere",
     "nav.aria": "Main",
     "nav.open": "Open menu",
@@ -23,8 +22,6 @@ window.ALPHA_AURA_I18N = {
     "cta.private": "Ask About Private Session",
     "cta.group": "Book for Your Group",
     "cta.book1111": "Book 11:11 Experience",
-    "cta.bookRanch": "Book Ranch Experience",
-    "cta.book1111Ranch": "Book 11:11 at the Ranch",
     "cta.bookJewel": "Book Jewel Hotel Session",
     "hero.eyebrow": "Premium Transformation",
     "hero.title": "Activate Your Inner Power",
@@ -67,48 +64,6 @@ window.ALPHA_AURA_I18N = {
       "Through Alpha Aura, abstract ideas like alignment, expansion, and inner power become something you can actually feel in your body.",
     "experience.p2":
       "The method activates core energy, sharpens the senses, and helps you embody confidence, clarity, and freedom — not as concepts, but as lived experience.",
-    "ranch.eyebrow": "Featured Location",
-    "ranch.title": "11:11 at the Horse Ranch",
-    "ranch.lead":
-      "A sanctuary where sand, sunset light, free-roaming horses, and Alpha Aura activation become one immersive ritual.",
-    "ranch.hero.eyebrow": "The Atmosphere",
-    "ranch.hero.caption":
-      "As the sun sets and moonlight fills the ranch, nature, light, silence, movement, and community become an unforgettable ritual.",
-    "ranch.why.eyebrow": "A Place of Transformation",
-    "ranch.why.title": "Why the Ranch",
-    "ranch.why.lead":
-      "Discover a unique sanctuary where nature, respect for the horses, and a peaceful environment create the perfect foundation for deep inner work.",
-    "ranch.why.body":
-      "Here, Alpha Aura frequency meets the grounding energy of the sand and the quiet presence of the horses — a combination of sensory activation, intentional movement, music, and collective energy that feels unlike any other session.",
-    "ranch.sand.title": "Grounding in the Sand",
-    "ranch.sand.body":
-      "The workshop begins with your feet on the earth. Practicing on sand deepens grounding — reconnecting you with nature, your body, and the present moment.",
-    "ranch.horses.title": "Horses as Silent Mirrors",
-    "ranch.horses.body":
-      "The horses move freely throughout the experience. Their sensitivity to body language and emotion creates a calming presence that invites authenticity and connection.",
-    "ranch.music.title": "Music & Activation",
-    "ranch.music.body":
-      "Carefully selected music guides the journey while 11:11 activation movements awaken the body — releasing tension and making space for renewed vitality.",
-    "ranch.senses.eyebrow": "Awakening the Senses",
-    "ranch.senses.title": "Every detail is intentional",
-    "ranch.senses.p1":
-      "Fresh air, the touch of the sand, the sounds of nature, and the presence of the horses awaken the senses and invite a deeper state of presence.",
-    "ranch.senses.p2":
-      "After activation, meditation creates space for stillness — to anchor intentions, gain clarity, and connect with the vision you wish to bring into your life. The final phase is expansion and embodiment: leaving not only inspired, but deeply connected to your own potential.",
-    "ranch.check1": "Grounding sand energy field",
-    "ranch.check2": "Alpha Aura activation movements",
-    "ranch.check3": "Horse presence & quiet awareness",
-    "ranch.check4": "Music-guided sensory immersion",
-    "ranch.check5": "Sunset & moonlight ritual atmosphere",
-    "ranch.check6": "Meditation, vision & embodiment",
-    "ranch.cap.sunset": "Sunset activation",
-    "ranch.cap.night": "Night connection",
-    "ranch.cap.silent": "Silent presence",
-    "ranch.cap.collective": "Collective energy on the sand",
-    "ranch.cta.eyebrow": "Begin at the Ranch",
-    "ranch.cta.title": "Your frequency. The earth. The horses. One ritual.",
-    "ranch.cta.body":
-      "The power of the experience lies in the combination — grounding earth, free-roaming horses, Alpha Aura activation, music, meditation, and the collective energy of the group.",
     "jewel.eyebrow": "Featured Location",
     "jewel.title": "Alpha Aura at Jewel Hotel",
     "jewel.lead":
@@ -162,8 +117,7 @@ window.ALPHA_AURA_I18N = {
     "e1111.li4": "Confidence & clarity",
     "e1111.li5": "Deep connection",
     "e1111.li6": "Embodied freedom",
-    "e1111.note": "Available at our featured locations —",
-    "e1111.noteLink": "Horse Ranch",
+    "e1111.note": "Available at our featured location —",
     "e1111.noteJewel": "Jewel Hotel",
     "benefits.eyebrow": "After Your Session",
     "benefits.title": "Why Join Alpha Aura",
@@ -186,10 +140,8 @@ window.ALPHA_AURA_I18N = {
     "atmosphere.eyebrow": "The Atmosphere",
     "atmosphere.title": "Feel the Energy Before You Arrive",
     "atmosphere.lead":
-      "Movement. Connection. Rooftop light. Ranch rituals. Human moments that stay with you.",
-    "cap.ranchRitual": "Ranch ritual",
+      "Movement. Connection. Rooftop light. Human moments that stay with you.",
     "cap.liveClass": "Live class energy",
-    "cap.ranchSunset": "Ranch sunset",
     "cap.rooftop": "Rooftop connection",
     "cap.rhythm": "Feel the rhythm",
     "cap.energyMotion": "Energy in motion",
@@ -216,20 +168,17 @@ window.ALPHA_AURA_I18N = {
     "wa.private": "Hello, I'd like to ask about a Private Alpha Aura session.",
     "wa.group": "Hello, I'd like to book a Private Group Alpha Aura experience.",
     "wa.1111": "Hello, I'd like to book the 11:11 Experience.",
-    "wa.ranch": "Hello, I'd like to book the 11:11 Workshop at the Horse Ranch.",
-    "wa.ranchInfo": "Hello, I'd like to learn more about Horse Ranch sessions.",
     "wa.jewel": "Hello, I'd like to book an Alpha Aura session at Jewel Hotel.",
     "wa.jewelInfo": "Hello, I'd like to learn more about Alpha Aura at Jewel Hotel.",
   },
   fr: {
     "meta.title": "Alpha Aura — Activez Votre Pouvoir Intérieur",
     "meta.description":
-      "Alpha Aura — Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion. Séances au Horse Ranch et sur le rooftop du Jewel Hotel, Tel Aviv.",
+      "Alpha Aura — Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion. Séances sur le rooftop du Jewel Hotel, Tel Aviv.",
     "nav.experience": "Expérience",
     "nav.sessions": "Séances",
     "nav.1111": "11:11",
     "nav.jewel": "Jewel Hotel",
-    "nav.ranch": "Horse Ranch",
     "nav.atmosphere": "Atmosphère",
     "nav.aria": "Principal",
     "nav.open": "Ouvrir le menu",
@@ -241,8 +190,6 @@ window.ALPHA_AURA_I18N = {
     "cta.private": "Demander une séance privée",
     "cta.group": "Réserver pour votre groupe",
     "cta.book1111": "Réserver l'expérience 11:11",
-    "cta.bookRanch": "Réserver au Ranch",
-    "cta.book1111Ranch": "Réserver le 11:11 au Ranch",
     "cta.bookJewel": "Réserver au Jewel Hotel",
     "hero.eyebrow": "Transformation Premium",
     "hero.title": "Activez Votre Pouvoir Intérieur",
@@ -285,48 +232,6 @@ window.ALPHA_AURA_I18N = {
       "Avec Alpha Aura, des notions comme l'alignement, l'expansion et le pouvoir intérieur deviennent quelque chose que vous pouvez vraiment sentir dans votre corps.",
     "experience.p2":
       "La méthode active l'énergie centrale, affine les sens et vous aide à incarner confiance, clarté et liberté — non comme des concepts, mais comme une expérience vécue.",
-    "ranch.eyebrow": "Lieu Phare",
-    "ranch.title": "11:11 au Horse Ranch",
-    "ranch.lead":
-      "Un sanctuaire où le sable, la lumière du couchant, les chevaux en liberté et l'activation Alpha Aura deviennent un seul rituel immersif.",
-    "ranch.hero.eyebrow": "L'Atmosphère",
-    "ranch.hero.caption":
-      "Quand le soleil décline et que le clair de lune enveloppe le ranch, la nature, la lumière, le silence, le mouvement et la communauté deviennent un rituel inoubliable.",
-    "ranch.why.eyebrow": "Un Lieu de Transformation",
-    "ranch.why.title": "Pourquoi le Ranch",
-    "ranch.why.lead":
-      "Découvrez un sanctuaire unique où la nature, le respect des chevaux et un environnement paisible posent les bases idéales d'un travail intérieur profond.",
-    "ranch.why.body":
-      "Ici, la fréquence Alpha Aura rencontre l'énergie ancrante du sable et la présence silencieuse des chevaux — une alliance d'activation sensorielle, de mouvement intentionnel, de musique et d'énergie collective, différente de toute autre séance.",
-    "ranch.sand.title": "L'Ancrage dans le Sable",
-    "ranch.sand.body":
-      "L'atelier commence les pieds sur la terre. Pratiquer sur le sable approfondit l'ancrage — et vous reconnecte à la nature, à votre corps et à l'instant présent.",
-    "ranch.horses.title": "Les Chevaux, Miroirs Silencieux",
-    "ranch.horses.body":
-      "Les chevaux circulent librement durant l'expérience. Leur sensibilité au langage du corps et à l'émotion crée une présence apaisante, invitant authenticité et connexion.",
-    "ranch.music.title": "Musique & Activation",
-    "ranch.music.body":
-      "Une musique soigneusement choisie guide le parcours, tandis que les mouvements d'activation 11:11 éveillent le corps — libérant les tensions et ouvrant l'espace à une vitalité renouvelée.",
-    "ranch.senses.eyebrow": "Éveiller les Sens",
-    "ranch.senses.title": "Chaque détail est intentionnel",
-    "ranch.senses.p1":
-      "L'air frais, le toucher du sable, les sons de la nature et la présence des chevaux éveillent les sens et invitent à une présence plus profonde.",
-    "ranch.senses.p2":
-      "Après l'activation, la méditation ouvre un espace de silence — pour ancrer vos intentions, clarifier votre vision et vous relier à ce que vous souhaitez faire entrer dans votre vie. La phase finale est l'expansion et l'incarnation : repartir non seulement inspiré, mais profondément relié à votre propre potentiel.",
-    "ranch.check1": "Champ d'énergie ancrante du sable",
-    "ranch.check2": "Mouvements d'activation Alpha Aura",
-    "ranch.check3": "Présence des chevaux & conscience silencieuse",
-    "ranch.check4": "Immersion sensorielle guidée par la musique",
-    "ranch.check5": "Atmosphère rituelle — coucher de soleil & clair de lune",
-    "ranch.check6": "Méditation, vision & incarnation",
-    "ranch.cap.sunset": "Activation au couchant",
-    "ranch.cap.night": "Connexion nocturne",
-    "ranch.cap.silent": "Présence silencieuse",
-    "ranch.cap.collective": "Énergie collective sur le sable",
-    "ranch.cta.eyebrow": "Commencer au Ranch",
-    "ranch.cta.title": "Votre fréquence. La terre. Les chevaux. Un seul rituel.",
-    "ranch.cta.body":
-      "La force de l'expérience naît de l'ensemble — terre ancrante, chevaux en liberté, activation Alpha Aura, musique, méditation et énergie collective du groupe.",
     "jewel.eyebrow": "Lieu Phare",
     "jewel.title": "Alpha Aura au Jewel Hotel",
     "jewel.lead":
@@ -380,8 +285,7 @@ window.ALPHA_AURA_I18N = {
     "e1111.li4": "Confiance & clarté",
     "e1111.li5": "Connexion profonde",
     "e1111.li6": "Liberté incarnée",
-    "e1111.note": "Disponible dans nos lieux phares —",
-    "e1111.noteLink": "Horse Ranch",
+    "e1111.note": "Disponible dans notre lieu phare —",
     "e1111.noteJewel": "Jewel Hotel",
     "benefits.eyebrow": "Après Votre Séance",
     "benefits.title": "Pourquoi Rejoindre Alpha Aura",
@@ -404,10 +308,8 @@ window.ALPHA_AURA_I18N = {
     "atmosphere.eyebrow": "L'Atmosphère",
     "atmosphere.title": "Ressentez l'Énergie Avant d'Arriver",
     "atmosphere.lead":
-      "Mouvement. Connexion. Lumière de rooftop. Rituels au ranch. Des moments humains qui restent.",
-    "cap.ranchRitual": "Rituel au ranch",
+      "Mouvement. Connexion. Lumière de rooftop. Des moments humains qui restent.",
     "cap.liveClass": "Énergie du cours",
-    "cap.ranchSunset": "Couchant au ranch",
     "cap.rooftop": "Connexion rooftop",
     "cap.rhythm": "Ressentir le rythme",
     "cap.energyMotion": "Énergie en mouvement",
@@ -437,8 +339,6 @@ window.ALPHA_AURA_I18N = {
     "wa.group":
       "Bonjour, j'aimerais réserver une expérience Alpha Aura privée en groupe.",
     "wa.1111": "Bonjour, j'aimerais réserver l'expérience 11:11.",
-    "wa.ranch": "Bonjour, j'aimerais réserver l'atelier 11:11 au Horse Ranch.",
-    "wa.ranchInfo": "Bonjour, j'aimerais en savoir plus sur les séances au Horse Ranch.",
     "wa.jewel": "Bonjour, j'aimerais réserver une séance Alpha Aura au Jewel Hotel.",
     "wa.jewelInfo": "Bonjour, j'aimerais en savoir plus sur Alpha Aura au Jewel Hotel.",
   },
