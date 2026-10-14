@@ -76,13 +76,13 @@ window.ALPHA_AURA_I18N = {
     "jewel.why.lead":
       "Located in the center of Tel Aviv, Jewel Hotel offers a rare setting for Alpha Aura: a hotel rooftop open to the sky, with a sea view that expands the experience.",
     "jewel.why.body":
-      "Here, the energy of the city softens into presence. Light, air, and the horizon become part of the journey — an elevated space for activation, clarity, and collective momentum without leaving the heart of Tel Aviv.",
+      "Here, the energy of the city softens into presence. Light, air, and the horizon become part of the journey — an elevated space for activation, clarity, and collective momentum. During the workshop, each participant wears headphones for a fully immersive, music-guided experience without leaving the heart of Tel Aviv.",
     "jewel.sea.title": "Sea View",
     "jewel.sea.body":
       "Practice with the Mediterranean as your backdrop — a sense of openness and expansion that mirrors the inner journey of Alpha Aura.",
     "jewel.rooftop.title": "Hotel Rooftop",
     "jewel.rooftop.body":
-      "Sessions take place on the rooftop of Jewel Hotel — an elevated, refined setting designed for presence, movement, and collective energy above the city.",
+      "Sessions take place on the rooftop of Jewel Hotel — an elevated, refined setting for presence, movement, and collective energy. Headphones are used throughout the workshop so the soundtrack guides you into deeper focus above the city.",
     "jewel.city.title": "In the City Center",
     "jewel.city.body":
       "Easy to reach in central Tel Aviv, yet removed from street-level noise — a private-feeling rooftop space for transformation within the pulse of the city.",
@@ -244,13 +244,13 @@ window.ALPHA_AURA_I18N = {
     "jewel.why.lead":
       "Situé au centre de Tel Aviv, le Jewel Hotel offre un cadre rare pour Alpha Aura : le rooftop d'un hôtel ouvert sur le ciel, avec une vue mer qui élargit l'expérience.",
     "jewel.why.body":
-      "Ici, l'énergie de la ville s'adoucit en présence. La lumière, l'air et l'horizon font partie du voyage — un espace élevé pour l'activation, la clarté et l'élan collectif, sans quitter le cœur de Tel Aviv.",
+      "Ici, l'énergie de la ville s'adoucit en présence. La lumière, l'air et l'horizon font partie du voyage — un espace élevé pour l'activation, la clarté et l'élan collectif. Pendant l'atelier, chaque participant porte un casque pour une expérience immersive, guidée par la musique, sans quitter le cœur de Tel Aviv.",
     "jewel.sea.title": "Vue Mer",
     "jewel.sea.body":
       "Pratiquez avec la Méditerranée en toile de fond — une sensation d'ouverture et d'expansion qui reflète le voyage intérieur d'Alpha Aura.",
     "jewel.rooftop.title": "Rooftop de l'Hôtel",
     "jewel.rooftop.body":
-      "Les séances se déroulent sur le rooftop du Jewel Hotel — un cadre élevé et raffiné pour la présence, le mouvement et l'énergie collective au-dessus de la ville.",
+      "Les séances se déroulent sur le rooftop du Jewel Hotel — un cadre élevé et raffiné pour la présence, le mouvement et l'énergie collective. Des casques sont utilisés tout au long de l'atelier pour que la musique vous guide vers une concentration plus profonde au-dessus de la ville.",
     "jewel.city.title": "En Plein Centre",
     "jewel.city.body":
       "Facile d'accès au centre de Tel Aviv, tout en restant à l'écart du bruit de la rue — un rooftop à l'ambiance privée pour la transformation au cœur du pouls urbain.",
