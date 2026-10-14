@@ -32,11 +32,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   -webkit-font-smoothing: antialiased;
-  overflow-x: clip;
-  /* Avoid scroll chaining jank on mobile */
-  overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -46,14 +44,8 @@ body {
   line-height: 1.65;
   color: var(--soft-black);
   background: var(--ivory);
-  overflow-x: clip;
+  overflow-x: hidden;
   min-height: 100%;
-}
-
-/* Paint isolation — keeps image decode / reveals from dirtying the whole page */
-main > section:not(#hero) {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 720px;
 }
 
 /* Scroll lock while mobile menu is open (top offset set in JS) */
@@ -165,10 +157,9 @@ h3 {
   display: flex;
   align-items: center;
   overflow: visible;
-  /* Solid layer only — backdrop-filter during scroll is a major jank source */
-  transition: background-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  /* No transition on scroll class — paint changes mid-scroll cause hitching */
+  background-color: transparent;
   transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 .header.is-scrolled {
@@ -426,15 +417,7 @@ a.btn--whatsapp:hover {
 }
 
 .hero__grain {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  opacity: 0.035;
-  pointer-events: none;
-  /* Static noise tile — SVG feTurbulence was re-composited every frame while scrolling */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  background-size: 128px 128px;
-  will-change: auto;
+  display: none;
 }
 
 .hero__content {
@@ -832,11 +815,6 @@ a.btn--whatsapp:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s var(--ease-out);
-}
-
-.session-card:hover .session-card__img img {
-  transform: scale(1.05);
 }
 
 .session-card__body {
@@ -1091,11 +1069,6 @@ a.btn--whatsapp:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s var(--ease-out);
-}
-
-.ranch-pillar:hover .ranch-pillar__img img {
-  transform: scale(1.05);
 }
 
 .ranch-pillar h3 {
@@ -1193,11 +1166,6 @@ a.btn--whatsapp:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 1s var(--ease-out);
-}
-
-.ranch-mosaic__item:hover img {
-  transform: scale(1.05);
 }
 
 .ranch-mosaic__item--lg {
@@ -1329,11 +1297,6 @@ a.btn--whatsapp:hover {
   min-height: 200px;
   object-fit: cover;
   object-position: center;
-  transition: transform 1s var(--ease-out);
-}
-
-.gallery-item:hover img {
-  transform: scale(1.06);
 }
 
 .gallery-item--feature {
@@ -1434,28 +1397,15 @@ a.btn--whatsapp:hover {
   height: 1.5rem;
 }
 
-/* Reveal animations — GPU-friendly, short enough not to stack during fast scroll */
-.reveal {
-  opacity: 0;
-  transform: translate3d(0, 20px, 0);
-  transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
-  will-change: opacity, transform;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  will-change: auto;
-}
-
-.reveal-delay-1 {
-  transition-delay: 0.06s;
-}
-.reveal-delay-2 {
-  transition-delay: 0.12s;
-}
+/* Reveals disabled — 50+ animated layers were stuttering scroll */
+.reveal,
+.reveal.is-visible,
+.reveal-delay-1,
+.reveal-delay-2,
 .reveal-delay-3 {
-  transition-delay: 0.18s;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 /* Divider */
@@ -1593,12 +1543,6 @@ a.btn--whatsapp:hover {
     margin-right: 0.15rem;
   }
 
-  /* Lighter reveals on mobile */
-  .reveal {
-    transform: translate3d(0, 12px, 0);
-    transition-duration: 0.4s;
-  }
-
   .desire {
     grid-template-columns: 1fr;
   }
@@ -1677,8 +1621,6 @@ a.btn--whatsapp:hover {
     visibility: hidden;
     transform: translate3d(0, 12px, 0);
     transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0.25s;
-    /* Stay composited — avoid display:none thrash on show/hide */
-    will-change: opacity, transform;
   }
 
   .sticky-book.is-visible {

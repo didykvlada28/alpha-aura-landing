@@ -33,48 +33,23 @@
 
   bindConversionTracking();
 
-  /* Decode images off the main scroll path */
   document.querySelectorAll("img").forEach((img) => {
     if (!img.hasAttribute("decoding")) img.setAttribute("decoding", "async");
   });
 
+  /* Header scrolled state via IO — no scroll listener (avoids main-thread work every frame) */
   const header = document.getElementById("header");
-  let headerTicking = false;
-  let headerScrolled = false;
-  const onScrollHeader = () => {
-    if (headerTicking) return;
-    headerTicking = true;
-    requestAnimationFrame(() => {
-      const y = window.scrollY || 0;
-      /* Hysteresis — avoid class thrash around the threshold */
-      const next = headerScrolled ? y > 24 : y > 48;
-      if (next !== headerScrolled) {
-        headerScrolled = next;
-        header?.classList.toggle("is-scrolled", headerScrolled);
-      }
-      headerTicking = false;
-    });
-  };
-  window.addEventListener("scroll", onScrollHeader, { passive: true });
-  onScrollHeader();
-
-  const revealEls = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    const revealIo = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("is-visible");
-            revealIo.unobserve(e.target);
-          }
-        });
+  const heroEl = document.getElementById("hero");
+  if (header && heroEl && "IntersectionObserver" in window) {
+    const headerIo = new IntersectionObserver(
+      ([entry]) => {
+        header.classList.toggle("is-scrolled", !entry.isIntersecting);
       },
-      /* Reveal a bit before enter — less simultaneous mid-viewport work */
-      { threshold: 0.05, rootMargin: "48px 0px -8px 0px" }
+      { threshold: 0, rootMargin: "-48px 0px 0px 0px" }
     );
-    revealEls.forEach((el) => revealIo.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add("is-visible"));
+    headerIo.observe(heroEl);
+  } else if (header) {
+    header.classList.add("is-scrolled");
   }
 
   /* —— Mobile nav + reliable scroll lock/unlock —— */
@@ -130,15 +105,14 @@
     if (e.key === "Escape" && navIsOpen) setNavOpen(false);
   });
 
-  /* Sticky book bar: only after leaving the hero (avoids double Book CTAs) */
+  /* Sticky book bar: only after leaving the hero */
   const stickyBook = document.getElementById("sticky-book");
-  const heroEl = document.getElementById("hero");
   if (stickyBook && heroEl && "IntersectionObserver" in window) {
     const stickyIo = new IntersectionObserver(
       ([entry]) => {
         stickyBook.classList.toggle("is-visible", !entry.isIntersecting);
       },
-      { threshold: 0.2 }
+      { threshold: 0, rootMargin: "0px" }
     );
     stickyIo.observe(heroEl);
   } else if (stickyBook) {
