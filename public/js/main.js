@@ -25,11 +25,10 @@
 
   /**
    * Official Meta standard event for Booking / Schedule a Meeting.
-   * Fired on click only, before navigation. Booking opens in a new tab
-   * (target=_blank), so the pixel request is not aborted by unload.
+   * Fired on click only — never on page load. Uses eventCallback + fallback
+   * timeout when navigation would unload this page, so the hit is not dropped.
    */
-  function trackSchedule(el) {
-    if (!canTrack()) return;
+  function fireScheduleThenMaybeNavigate(el, e) {
     /* Guard against duplicate Schedule from a single click / double-bind */
     if (el.dataset.fbScheduleLock === "1") return;
     el.dataset.fbScheduleLock = "1";
@@ -37,7 +36,30 @@
       delete el.dataset.fbScheduleLock;
     }, 1500);
 
-    fbq("track", "Schedule");
+    const href = el.getAttribute("href");
+    const opensInNewTab =
+      el.target === "_blank" || e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1;
+
+    if (!canTrack()) {
+      return; /* let default navigation proceed */
+    }
+
+    /* New tab: page stays loaded — fire and keep default behavior */
+    if (opensInNewTab || !href) {
+      fbq("track", "Schedule");
+      return;
+    }
+
+    /* Same-tab navigation: delay redirect until pixel acknowledges (or timeout) */
+    e.preventDefault();
+    let navigated = false;
+    const go = () => {
+      if (navigated) return;
+      navigated = true;
+      window.location.href = href;
+    };
+    fbq("track", "Schedule", {}, { eventCallback: go });
+    setTimeout(go, 500);
   }
 
   function bindConversionTracking() {
@@ -54,13 +76,9 @@
 
     /* Booking / BookDay — standard Schedule event only (not Lead) */
     document.querySelectorAll("a.bookday-link").forEach((el) => {
-      el.addEventListener(
-        "click",
-        () => {
-          trackSchedule(el);
-        },
-        { passive: true }
-      );
+      el.addEventListener("click", (e) => {
+        fireScheduleThenMaybeNavigate(el, e);
+      });
     });
   }
 
