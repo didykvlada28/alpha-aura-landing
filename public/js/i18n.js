@@ -29,11 +29,11 @@ window.ALPHA_AURA_I18N = {
     "hero.eyebrow": "Premium Transformation",
     "hero.title": "Activate Your Inner Power",
     "hero.sub":
-      "A premium transformational experience of movement, energy, mindset, and connection.",
+      "An immersive workshop — a premium transformational experience of movement, energy, mindset, and connection.",
     "hero.support":
       "Reconnect with confidence, clarity, and a higher frequency — in an intimate group experience.",
     "hero.exclusive": "Small groups. Limited places available.",
-    "hero.date": "Next workshop — October 23",
+    "hero.date": "Next workshop — October 23 · 9:30 AM",
     "hero.discover": "Discover",
     "desire.eyebrow": "Return to Yourself",
     "desire.title": "Your energy is still there — waiting to be felt again",
@@ -48,8 +48,8 @@ window.ALPHA_AURA_I18N = {
     "invite.eyebrow": "Your Next Experience Awaits",
     "invite.title": "11:11 Signature Experience",
     "invite.lead":
-      "60 minutes of movement, energy, connection, and transformation — designed to reconnect you with your inner power.",
-    "invite.date": "Next workshop — October 23",
+      "70 minutes of movement, energy, connection, and transformation — designed to reconnect you with your inner power.",
+    "invite.date": "Next workshop — October 23 · 9:30 AM",
     "invite.price": "₪180",
     "invite.per": "/ person",
     "invite.note": "Limited places per session. Secure your place while it lasts.",
@@ -124,10 +124,10 @@ window.ALPHA_AURA_I18N = {
     "sessions.opt3.body":
       "For friends, families, private celebrations, or small groups who want to share a powerful transformational experience together.",
     "e1111.tag": "Signature Experience",
-    "e1111.eyebrow": "60-Minute Journey",
+    "e1111.eyebrow": "70-Minute Journey",
     "e1111.title": "The 11:11 Experience",
     "e1111.body":
-      "A 60-minute transformational journey designed to activate your inner Alpha and expand your Aura through dynamic movement, sensory activation, and mindset shifts.",
+      "A 70-minute transformational journey designed to activate your inner Alpha and expand your Aura through dynamic movement, sensory activation, and mindset shifts.",
     "e1111.li1": "Physical, mental & emotional activation",
     "e1111.li2": "Energetic expansion & higher frequency",
     "e1111.li3": "Collective momentum",
@@ -214,11 +214,11 @@ window.ALPHA_AURA_I18N = {
     "hero.eyebrow": "Transformation Premium",
     "hero.title": "Activez Votre Pouvoir Intérieur",
     "hero.sub":
-      "Une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion.",
+      "Un atelier immersif — une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion.",
     "hero.support":
       "Retrouvez confiance, clarté et une fréquence plus haute — dans une expérience de groupe intime.",
     "hero.exclusive": "Petits groupes. Places limitées.",
-    "hero.date": "Prochain atelier — 23 octobre",
+    "hero.date": "Prochain atelier — 23 octobre · 9h30",
     "hero.discover": "Découvrir",
     "desire.eyebrow": "Revenir à Soi",
     "desire.title": "Votre énergie est toujours là — prête à être ressentie à nouveau",
@@ -233,8 +233,8 @@ window.ALPHA_AURA_I18N = {
     "invite.eyebrow": "Votre Prochaine Expérience Vous Attend",
     "invite.title": "Expérience Signature 11:11",
     "invite.lead":
-      "60 minutes de mouvement, d'énergie, de connexion et de transformation — conçues pour vous reconnecter à votre pouvoir intérieur.",
-    "invite.date": "Prochain atelier — 23 octobre",
+      "70 minutes de mouvement, d'énergie, de connexion et de transformation — conçues pour vous reconnecter à votre pouvoir intérieur.",
+    "invite.date": "Prochain atelier — 23 octobre · 9h30",
     "invite.price": "₪180",
     "invite.per": "/ personne",
     "invite.note": "Places limitées par séance. Réservez la vôtre tant qu'il en reste.",
@@ -309,10 +309,10 @@ window.ALPHA_AURA_I18N = {
     "sessions.opt3.body":
       "Pour les amis, les familles, les célébrations privées ou les petits groupes qui souhaitent partager ensemble une expérience transformationnelle puissante.",
     "e1111.tag": "Expérience Signature",
-    "e1111.eyebrow": "Parcours de 60 Minutes",
+    "e1111.eyebrow": "Parcours de 70 Minutes",
     "e1111.title": "L'Expérience 11:11",
     "e1111.body":
-      "Un parcours transformationnel de 60 minutes conçu pour activer votre Alpha intérieur et élargir votre Aura par le mouvement dynamique, l'activation sensorielle et les changements de mindset.",
+      "Un parcours transformationnel de 70 minutes conçu pour activer votre Alpha intérieur et élargir votre Aura par le mouvement dynamique, l'activation sensorielle et les changements de mindset.",
     "e1111.li1": "Activation physique, mentale & émotionnelle",
     "e1111.li2": "Expansion énergétique & fréquence plus haute",
     "e1111.li3": "Élan collectif",

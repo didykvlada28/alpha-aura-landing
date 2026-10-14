@@ -410,13 +410,21 @@ a.btn--whatsapp:hover {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    rgba(26, 24, 22, 0.25) 0%,
-    rgba(26, 24, 22, 0.15) 35%,
-    rgba(26, 24, 22, 0.55) 70%,
-    rgba(26, 24, 22, 0.82) 100%
-  );
+  background:
+    linear-gradient(
+      105deg,
+      rgba(26, 24, 22, 0.82) 0%,
+      rgba(26, 24, 22, 0.62) 42%,
+      rgba(26, 24, 22, 0.28) 72%,
+      rgba(26, 24, 22, 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(26, 24, 22, 0.35) 0%,
+      rgba(26, 24, 22, 0.2) 40%,
+      rgba(26, 24, 22, 0.55) 75%,
+      rgba(26, 24, 22, 0.85) 100%
+    );
   z-index: 1;
 }
 
@@ -435,6 +443,11 @@ a.btn--whatsapp:hover {
   width: min(94%, 80rem);
   margin-inline: auto;
   padding-top: calc(var(--header-h) + 2rem);
+  text-shadow: 0 1px 2px rgba(26, 24, 22, 0.35), 0 8px 28px rgba(26, 24, 22, 0.35);
+}
+
+.hero__content .btn {
+  text-shadow: none;
 }
 
 .hero__content .eyebrow {
