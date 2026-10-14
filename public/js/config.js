@@ -6,5 +6,6 @@ window.ALPHA_AURA_CONFIG = {
   whatsappDisplay: "+972 52-375-4891",
   bookdayUrl: "https://bookday.io/alphaaura",
   metaPixelId: "731067880081984",
+  /* Lead = messaging / WhatsApp only. Booking uses standard Schedule in main.js */
   metaConversionEvent: "Lead",
 };

@@ -1,12 +1,13 @@
 (function () {
   const cfg = window.ALPHA_AURA_CONFIG || {};
-  const CONVERSION_EVENT = cfg.metaConversionEvent || "Lead";
+  const LEAD_EVENT = cfg.metaConversionEvent || "Lead";
 
   function canTrack() {
     return typeof fbq === "function";
   }
 
-  function trackConversion(el) {
+  /* Existing messaging conversion — unchanged Lead payload */
+  function trackMessagingLead(el) {
     if (!canTrack()) return;
 
     const label = (el.getAttribute("data-fb-label") || el.textContent || "")
@@ -14,21 +15,53 @@
       .trim();
     const section = el.closest("section, header, footer, .sticky-book");
     const sectionId = section?.id || section?.className?.split(" ")[0] || "page";
-    const isBookday = el.classList.contains("bookday-link");
 
-    fbq("track", CONVERSION_EVENT, {
+    fbq("track", LEAD_EVENT, {
       content_name: label || "CTA click",
       content_category: sectionId,
-      destination: isBookday ? "bookday" : "whatsapp",
+      destination: "whatsapp",
     });
   }
 
+  /**
+   * Official Meta standard event for Booking / Schedule a Meeting.
+   * Fired on click only, before navigation. Booking opens in a new tab
+   * (target=_blank), so the pixel request is not aborted by unload.
+   */
+  function trackSchedule(el) {
+    if (!canTrack()) return;
+    /* Guard against duplicate Schedule from a single click / double-bind */
+    if (el.dataset.fbScheduleLock === "1") return;
+    el.dataset.fbScheduleLock = "1";
+    setTimeout(() => {
+      delete el.dataset.fbScheduleLock;
+    }, 1500);
+
+    fbq("track", "Schedule");
+  }
+
   function bindConversionTracking() {
-    document
-      .querySelectorAll("a.btn, a.whatsapp-float, .nav a.wa-link, a.bookday-link")
-      .forEach((el) => {
-        el.addEventListener("click", () => trackConversion(el), { passive: true });
-      });
+    /* Messaging / WhatsApp — keep existing Lead tracking only */
+    document.querySelectorAll("a.wa-link, a.whatsapp-float").forEach((el) => {
+      el.addEventListener(
+        "click",
+        () => {
+          trackMessagingLead(el);
+        },
+        { passive: true }
+      );
+    });
+
+    /* Booking / BookDay — standard Schedule event only (not Lead) */
+    document.querySelectorAll("a.bookday-link").forEach((el) => {
+      el.addEventListener(
+        "click",
+        () => {
+          trackSchedule(el);
+        },
+        { passive: true }
+      );
+    });
   }
 
   bindConversionTracking();
