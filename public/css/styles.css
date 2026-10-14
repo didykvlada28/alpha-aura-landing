@@ -344,27 +344,27 @@ body.nav-open .header.is-scrolled::before {
   color: var(--gold);
 }
 
-/* Solid light secondary CTA — always light (not only on hover) */
+/* Soft secondary CTA — visible on dark, quieter than primary gold */
 .btn--whatsapp,
 .btn--secondary,
 a.btn--secondary,
 a.btn--whatsapp {
-  background: #f9f6f1 !important;
-  background-color: #f9f6f1 !important;
-  color: #1a1816 !important;
-  border: 1px solid #e8e2d8 !important;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
+  background: rgba(249, 246, 241, 0.1) !important;
+  background-color: rgba(249, 246, 241, 0.1) !important;
+  color: rgba(249, 246, 241, 0.92) !important;
+  border: 1px solid rgba(228, 212, 168, 0.45) !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 .btn--whatsapp:hover,
 .btn--secondary:hover,
 a.btn--secondary:hover,
 a.btn--whatsapp:hover {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  color: #1a1816 !important;
+  background: rgba(249, 246, 241, 0.18) !important;
+  background-color: rgba(249, 246, 241, 0.18) !important;
+  border-color: rgba(228, 212, 168, 0.75) !important;
+  color: #f9f6f1 !important;
 }
 
 .btn--whatsapp svg,
@@ -372,7 +372,7 @@ a.btn--whatsapp:hover {
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
-  color: #1a1816;
+  color: inherit;
   fill: currentColor;
 }
 
@@ -582,17 +582,7 @@ a.btn--whatsapp:hover {
   letter-spacing: 0.04em;
 }
 
-.invite-card__actions .btn--secondary {
-  background: #f9f6f1;
-  color: #1a1816;
-  border-color: #f9f6f1;
-}
-
-.invite-card__actions .btn--secondary:hover {
-  background: #fff;
-  color: #1a1816;
-  border-color: #fff;
-}
+/* secondary styles inherited — keep invite quiet */
 
 /* Mobile sticky Book CTA — sits beside WhatsApp float; shown after hero */
 .sticky-book {
