@@ -344,15 +344,27 @@ body.nav-open .header.is-scrolled::before {
   color: var(--gold);
 }
 
-.btn--whatsapp {
-  background: transparent;
-  color: var(--ivory);
-  border: 1px solid rgba(249, 246, 241, 0.35);
+.btn--whatsapp,
+.btn--secondary {
+  background: rgba(249, 246, 241, 0.16);
+  color: #f9f6f1;
+  border: 1px solid rgba(249, 246, 241, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
-.btn--whatsapp svg {
+.btn--whatsapp:hover,
+.btn--secondary:hover {
+  background: rgba(249, 246, 241, 0.26);
+  border-color: #f9f6f1;
+  color: #fff;
+}
+
+.btn--whatsapp svg,
+.btn--secondary svg {
   width: 1rem;
   height: 1rem;
+  flex-shrink: 0;
 }
 
 .btn--sm {
@@ -448,8 +460,16 @@ body.nav-open .header.is-scrolled::before {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold-light);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   opacity: 0.9;
+}
+
+.hero__date {
+  font-size: 0.95rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+  color: rgba(249, 246, 241, 0.88);
+  margin-bottom: 2rem;
 }
 
 .cta-pair {
@@ -545,17 +565,29 @@ body.nav-open .header.is-scrolled::before {
   margin-top: 2.25rem;
 }
 
-.invite-card__actions .btn--outline {
-  color: var(--ivory);
-  border-color: rgba(249, 246, 241, 0.35);
+.invite-card__date {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
 }
 
-.invite-card__actions .btn--outline:hover {
+.invite-card__actions .btn--outline,
+.invite-card__actions .btn--secondary {
+  background: rgba(249, 246, 241, 0.14);
+  color: #f9f6f1;
+  border-color: rgba(249, 246, 241, 0.65);
+}
+
+.invite-card__actions .btn--outline:hover,
+.invite-card__actions .btn--secondary:hover {
+  background: rgba(249, 246, 241, 0.24);
   border-color: var(--gold-light);
   color: var(--gold-light);
 }
 
-/* Mobile sticky Book CTA — sits below WhatsApp float */
+/* Mobile sticky Book CTA — sits beside WhatsApp float; shown after hero */
 .sticky-book {
   display: none;
 }
@@ -1616,7 +1648,7 @@ body.nav-open .header.is-scrolled::before {
   }
 
   .sticky-book {
-    display: flex;
+    display: none;
     position: fixed;
     left: 1rem;
     right: 4.75rem;
@@ -1624,6 +1656,16 @@ body.nav-open .header.is-scrolled::before {
     z-index: 90;
     justify-content: stretch;
     pointer-events: none;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  }
+
+  .sticky-book.is-visible {
+    display: flex;
+    pointer-events: none;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .sticky-book .btn {
@@ -1637,12 +1679,26 @@ body.nav-open .header.is-scrolled::before {
     right: 1rem;
   }
 
+  .hero {
+    padding-bottom: clamp(5rem, 14vh, 7rem);
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  .hero__ctas {
+    gap: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
   body {
     padding-bottom: 5.5rem;
   }
 
   body.nav-open .sticky-book {
     visibility: hidden;
+    opacity: 0;
   }
 }
 

@@ -110,4 +110,19 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && navIsOpen) setNavOpen(false);
   });
+
+  /* Sticky book bar: only after leaving the hero (avoids double Book CTAs) */
+  const stickyBook = document.getElementById("sticky-book");
+  const heroEl = document.getElementById("hero");
+  if (stickyBook && heroEl && "IntersectionObserver" in window) {
+    const stickyIo = new IntersectionObserver(
+      ([entry]) => {
+        stickyBook.classList.toggle("is-visible", !entry.isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+    stickyIo.observe(heroEl);
+  } else if (stickyBook) {
+    stickyBook.classList.add("is-visible");
+  }
 })();

@@ -33,6 +33,7 @@ window.ALPHA_AURA_I18N = {
     "hero.support":
       "Reconnect with confidence, clarity, and a higher frequency — in an intimate group experience.",
     "hero.exclusive": "Small groups. Limited places available.",
+    "hero.date": "Next workshop — October 23",
     "hero.discover": "Discover",
     "desire.eyebrow": "Return to Yourself",
     "desire.title": "Your energy is still there — waiting to be felt again",
@@ -48,6 +49,7 @@ window.ALPHA_AURA_I18N = {
     "invite.title": "11:11 Signature Experience",
     "invite.lead":
       "60 minutes of movement, energy, connection, and transformation — designed to reconnect you with your inner power.",
+    "invite.date": "Next workshop — October 23",
     "invite.price": "₪180",
     "invite.per": "/ person",
     "invite.note": "Limited places per session. Secure your place while it lasts.",
@@ -216,6 +218,7 @@ window.ALPHA_AURA_I18N = {
     "hero.support":
       "Retrouvez confiance, clarté et une fréquence plus haute — dans une expérience de groupe intime.",
     "hero.exclusive": "Petits groupes. Places limitées.",
+    "hero.date": "Prochain atelier — 23 octobre",
     "hero.discover": "Découvrir",
     "desire.eyebrow": "Revenir à Soi",
     "desire.title": "Votre énergie est toujours là — prête à être ressentie à nouveau",
@@ -231,6 +234,7 @@ window.ALPHA_AURA_I18N = {
     "invite.title": "Expérience Signature 11:11",
     "invite.lead":
       "60 minutes de mouvement, d'énergie, de connexion et de transformation — conçues pour vous reconnecter à votre pouvoir intérieur.",
+    "invite.date": "Prochain atelier — 23 octobre",
     "invite.price": "₪180",
     "invite.per": "/ personne",
     "invite.note": "Places limitées par séance. Réservez la vôtre tant qu'il en reste.",
