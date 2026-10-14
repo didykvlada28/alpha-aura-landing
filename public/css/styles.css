@@ -344,20 +344,21 @@ body.nav-open .header.is-scrolled::before {
   color: var(--gold);
 }
 
+/* Solid light secondary CTA — readable on dark photos and dark sections */
 .btn--whatsapp,
 .btn--secondary {
-  background: rgba(249, 246, 241, 0.16);
-  color: #f9f6f1;
-  border: 1px solid rgba(249, 246, 241, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background: #f9f6f1;
+  color: #1a1816;
+  border: 1px solid #f9f6f1;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .btn--whatsapp:hover,
 .btn--secondary:hover {
-  background: rgba(249, 246, 241, 0.26);
-  border-color: #f9f6f1;
-  color: #fff;
+  background: #fff;
+  border-color: #fff;
+  color: #1a1816;
 }
 
 .btn--whatsapp svg,
@@ -365,6 +366,8 @@ body.nav-open .header.is-scrolled::before {
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
+  color: #1a1816;
+  fill: currentColor;
 }
 
 .btn--sm {
@@ -573,18 +576,16 @@ body.nav-open .header.is-scrolled::before {
   letter-spacing: 0.04em;
 }
 
-.invite-card__actions .btn--outline,
 .invite-card__actions .btn--secondary {
-  background: rgba(249, 246, 241, 0.14);
-  color: #f9f6f1;
-  border-color: rgba(249, 246, 241, 0.65);
+  background: #f9f6f1;
+  color: #1a1816;
+  border-color: #f9f6f1;
 }
 
-.invite-card__actions .btn--outline:hover,
 .invite-card__actions .btn--secondary:hover {
-  background: rgba(249, 246, 241, 0.24);
-  border-color: var(--gold-light);
-  color: var(--gold-light);
+  background: #fff;
+  color: #1a1816;
+  border-color: #fff;
 }
 
 /* Mobile sticky Book CTA — sits beside WhatsApp float; shown after hero */
