@@ -487,10 +487,10 @@ a.btn--whatsapp:hover {
 }
 
 .hero__date {
-  font-size: 0.95rem;
+  font-size: clamp(1.2rem, 2.6vw, 1.45rem);
   font-family: var(--font-display);
-  letter-spacing: 0.06em;
-  color: rgba(249, 246, 241, 0.88);
+  letter-spacing: 0.04em;
+  color: rgba(249, 246, 241, 0.95);
   margin-bottom: 2rem;
 }
 
