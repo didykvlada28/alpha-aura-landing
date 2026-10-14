@@ -35,6 +35,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
+  /* Avoid scroll chaining jank on mobile */
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -46,6 +48,12 @@ body {
   background: var(--ivory);
   overflow-x: clip;
   min-height: 100%;
+}
+
+/* Paint isolation — keeps image decode / reveals from dirtying the whole page */
+main > section:not(#hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
 }
 
 /* Scroll lock while mobile menu is open (top offset set in JS) */
@@ -157,28 +165,19 @@ h3 {
   display: flex;
   align-items: center;
   overflow: visible;
-  transition: box-shadow 0.5s var(--ease);
+  /* Solid layer only — backdrop-filter during scroll is a major jank source */
+  transition: background-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .header.is-scrolled {
+  background-color: rgba(26, 24, 22, 0.96);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.header.is-scrolled::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: rgba(26, 24, 22, 0.92);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  pointer-events: none;
-}
-
-body.nav-open .header.is-scrolled::before {
-  background: var(--soft-black);
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
+body.nav-open .header {
+  background-color: var(--soft-black);
 }
 
 .header__inner {
@@ -349,12 +348,10 @@ body.nav-open .header.is-scrolled::before {
 .btn--secondary,
 a.btn--secondary,
 a.btn--whatsapp {
-  background: rgba(249, 246, 241, 0.1) !important;
-  background-color: rgba(249, 246, 241, 0.1) !important;
+  background: rgba(249, 246, 241, 0.12) !important;
+  background-color: rgba(249, 246, 241, 0.12) !important;
   color: rgba(249, 246, 241, 0.92) !important;
   border: 1px solid rgba(228, 212, 168, 0.45) !important;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 
 .btn--whatsapp:hover,
@@ -432,9 +429,12 @@ a.btn--whatsapp:hover {
   position: absolute;
   inset: 0;
   z-index: 2;
-  opacity: 0.04;
+  opacity: 0.035;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* Static noise tile — SVG feTurbulence was re-composited every frame while scrolling */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+  will-change: auto;
 }
 
 .hero__content {
@@ -1420,10 +1420,12 @@ a.btn--whatsapp:hover {
   justify-content: center;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
   transition: transform 0.35s var(--ease-out), box-shadow 0.35s;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.08);
+  transform: translateZ(0) scale(1.08);
   box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
 }
 
@@ -1432,26 +1434,28 @@ a.btn--whatsapp:hover {
   height: 1.5rem;
 }
 
-/* Reveal animations */
+/* Reveal animations — GPU-friendly, short enough not to stack during fast scroll */
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+  will-change: opacity, transform;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
 }
 
 .reveal-delay-1 {
-  transition-delay: 0.1s;
+  transition-delay: 0.06s;
 }
 .reveal-delay-2 {
-  transition-delay: 0.2s;
+  transition-delay: 0.12s;
 }
 .reveal-delay-3 {
-  transition-delay: 0.3s;
+  transition-delay: 0.18s;
 }
 
 /* Divider */
@@ -1589,10 +1593,10 @@ a.btn--whatsapp:hover {
     margin-right: 0.15rem;
   }
 
-  /* Lighter reveals — fewer compositor jumps while scrolling */
+  /* Lighter reveals on mobile */
   .reveal {
-    transform: translateY(14px);
-    transition-duration: 0.55s;
+    transform: translate3d(0, 12px, 0);
+    transition-duration: 0.4s;
   }
 
   .desire {
@@ -1661,7 +1665,7 @@ a.btn--whatsapp:hover {
   }
 
   .sticky-book {
-    display: none;
+    display: flex;
     position: fixed;
     left: 1rem;
     right: 4.75rem;
@@ -1670,15 +1674,18 @@ a.btn--whatsapp:hover {
     justify-content: stretch;
     pointer-events: none;
     opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+    visibility: hidden;
+    transform: translate3d(0, 12px, 0);
+    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0.25s;
+    /* Stay composited — avoid display:none thrash on show/hide */
+    will-change: opacity, transform;
   }
 
   .sticky-book.is-visible {
-    display: flex;
     pointer-events: none;
     opacity: 1;
-    transform: translateY(0);
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
   }
 
   .sticky-book .btn {

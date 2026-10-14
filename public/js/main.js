@@ -33,9 +33,27 @@
 
   bindConversionTracking();
 
+  /* Decode images off the main scroll path */
+  document.querySelectorAll("img").forEach((img) => {
+    if (!img.hasAttribute("decoding")) img.setAttribute("decoding", "async");
+  });
+
   const header = document.getElementById("header");
+  let headerTicking = false;
+  let headerScrolled = false;
   const onScrollHeader = () => {
-    header?.classList.toggle("is-scrolled", window.scrollY > 40);
+    if (headerTicking) return;
+    headerTicking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY || 0;
+      /* Hysteresis — avoid class thrash around the threshold */
+      const next = headerScrolled ? y > 24 : y > 48;
+      if (next !== headerScrolled) {
+        headerScrolled = next;
+        header?.classList.toggle("is-scrolled", headerScrolled);
+      }
+      headerTicking = false;
+    });
   };
   window.addEventListener("scroll", onScrollHeader, { passive: true });
   onScrollHeader();
@@ -51,7 +69,8 @@
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px -24px 0px" }
+      /* Reveal a bit before enter — less simultaneous mid-viewport work */
+      { threshold: 0.05, rootMargin: "48px 0px -8px 0px" }
     );
     revealEls.forEach((el) => revealIo.observe(el));
   } else {
