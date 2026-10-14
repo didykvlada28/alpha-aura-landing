@@ -29,7 +29,7 @@ window.ALPHA_AURA_I18N = {
     "hero.eyebrow": "Premium Transformation",
     "hero.title": "Activate Your Inner Power",
     "hero.sub":
-      "An immersive workshop with headphones — a premium transformational experience of movement, energy, mindset, and connection.",
+      "An immersive workshop with headphones — a premium transformational experience of movement, energy, music, and connection.",
     "hero.support":
       "Reconnect with confidence, clarity, and a higher frequency — in an intimate group experience.",
     "hero.exclusive": "Small groups. Limited places available.",
@@ -214,7 +214,7 @@ window.ALPHA_AURA_I18N = {
     "hero.eyebrow": "Transformation Premium",
     "hero.title": "Activez Votre Pouvoir Intérieur",
     "hero.sub":
-      "Un atelier immersif avec casque — une expérience transformationnelle premium de mouvement, d'énergie, de mindset et de connexion.",
+      "Un atelier immersif avec casque — une expérience transformationnelle premium de mouvement, d'énergie, de musique et de connexion.",
     "hero.support":
       "Retrouvez confiance, clarté et une fréquence plus haute — dans une expérience de groupe intime.",
     "hero.exclusive": "Petits groupes. Places limitées.",
