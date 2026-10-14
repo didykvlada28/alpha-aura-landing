@@ -344,21 +344,27 @@ body.nav-open .header.is-scrolled::before {
   color: var(--gold);
 }
 
-/* Solid light secondary CTA — readable on dark photos and dark sections */
+/* Solid light secondary CTA — always light (not only on hover) */
 .btn--whatsapp,
-.btn--secondary {
-  background: #f9f6f1;
-  color: #1a1816;
-  border: 1px solid #f9f6f1;
+.btn--secondary,
+a.btn--secondary,
+a.btn--whatsapp {
+  background: #f9f6f1 !important;
+  background-color: #f9f6f1 !important;
+  color: #1a1816 !important;
+  border: 1px solid #e8e2d8 !important;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
 
 .btn--whatsapp:hover,
-.btn--secondary:hover {
-  background: #fff;
-  border-color: #fff;
-  color: #1a1816;
+.btn--secondary:hover,
+a.btn--secondary:hover,
+a.btn--whatsapp:hover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #1a1816 !important;
 }
 
 .btn--whatsapp svg,
